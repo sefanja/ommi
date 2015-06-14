@@ -1,0 +1,97 @@
+<div class="modal-header">
+  <button type="button" class="close" aria-hidden="true" ng-click="$dismiss()">&times;</button>
+  <h3 class="modal-title">Publication details</h3>
+</div>
+<div class="modal-body" style="overflow:auto">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-10">
+        <p><img src="images/doi.png"> DOI &nbsp; &nbsp; &nbsp; <img src="images/pdf.png"> PDF</p><br/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <h2 class="attr">Title</h2>
+      </div>
+      <div class="col-md-10">
+        <p>{{pub.title}}</p>
+      </div>
+    </div>
+    <div class="row" ng-if="pub.subtitle">
+      <div class="col-md-2">
+        <h2 class="attr">Subtitle</h2>
+      </div>
+      <div class="col-md-10">
+        <p>{{pub.subtitle}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <h2 class="attr">Abstract</h2>
+      </div>
+      <div class="col-md-10">
+        <p>{{pub.abstract}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <h2 class="attr">Type</h2>
+      </div>
+      <div class="col-md-10">
+        <p class="text-capitalize">{{pub.type}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <h2 class="attr">Research group</h2>
+      </div>
+      <div class="col-md-10">
+        <p>{{pub.researchgroup}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <h2 class="attr">Research program</h2>
+      </div>
+      <div class="col-md-10">
+        <p>{{pub.researchprogram}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <h2 class="attr">Research project</h2>
+      </div>
+      <div class="col-md-10">
+        <p>{{pub.researchproject}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <h2 class="attr">Keywords</h2>
+      </div>
+      <div class="col-md-10">
+        <p>{{pub.keywords}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <h2 class="attr">Deposited</h2>
+      </div>
+      <div class="col-md-10">
+        <p>{{pub.deposited | date}}</p>
+      </div>
+    </div>
+    <div class="row" ng-if="pub.refereed = 'Yes'">
+      <div class="col-md-2">
+        <h2 class="attr">Refereed</h2>
+      </div>
+      <div class="col-md-10">
+        <p>{{pub.refereed}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-primary" ng-click="$close()">Close</button>
+</div>

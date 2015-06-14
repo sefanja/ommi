@@ -1,3 +1,5 @@
+/* global _ */
+
 'use strict';
 
 /**
@@ -8,10 +10,22 @@
  * Controller of the ommiApp
  */
 angular.module('ommiApp')
-  .controller('PublicationsCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('PublicationsCtrl', function ($scope, $http, $modal) {
+    $http.get('api/publications.json').success(function (data) {
+      $scope.publications = data;
+      $scope.years = _.unique(_.pluck(data, 'year'));
+    });
+
+    $scope.openPubDetailModal = function (publication) {
+      $modal.open({
+        templateUrl: 'views/pubdetail.html',
+        controller: 'PubDetailCtrl',
+        resolve: {
+          publication: function () {
+            return publication;
+          }
+        },
+        animation: false // Without this, the backdrop won't go away (bug).
+      });
+    };
   });

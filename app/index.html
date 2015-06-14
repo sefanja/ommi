@@ -26,13 +26,13 @@
 <div class="page" ng-controller="RootCtrl">
   <div class="brandbar">
     <div class="container-fluid">
-      <div class="row-fluid">
-        <div class="col-sm-6 col-xs-6 logodiv">
+      <div class="row">
+        <div class="col-md-6 col-xs-6">
           <a href="http://www.uu.nl" title="Home Page Utrecht University">
             <img id="ImageLogo" alt="Logo Utrecht University" src="images/logo.svg">
           </a>
         </div>
-        <div class="col-sm-5 col-xs-4">
+        <div class="col-md-5 col-xs-4">
           <div class="brandbar-search pull-right">
             <div id="PanelZoek" class="divZoekMedewerker">
               <div class="searchbox">
@@ -43,7 +43,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-1 col-xs-2 divLanguage">
+        <div class="col-md-1 col-xs-2 divLanguage">
           <a id="hlTaal" class="hlLanguage" href="#">Nederlands</a>
         </div>
       </div>
@@ -52,33 +52,37 @@
 
   <div class="title">
     <div class="container-fluid">
-      <div class="row-fluid">
-        <h1>
-          <div id="PanelBanner" class="banner-en">
-            <a id="btnHeader" href="#"><span id="lblHeadertekst">Staff</span>&nbsp;<span
-              id="lblFaculteitNaamHeader">Science</span></a>
-          </div>
-        </h1>
+      <div class="row">
+        <div class="col-md-12">
+          <h1>
+            <div id="PanelBanner" class="banner-en">
+              <a id="btnHeader" href="#"><span id="lblHeadertekst">Staff</span>&nbsp;<span
+                id="lblFaculteitNaamHeader">Science</span></a>
+            </div>
+          </h1>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="divMenu">
     <div class="container-fluid">
-      <div class="row-fluid">
-        <ul>
-          <li><a href="#">Home UU</a></li>
-          <li><a href="#">Home Science</a></li>
-          <li><a href="#">Staff</a></li>
-        </ul>
+      <div class="row">
+        <div class="col-md-12">
+          <ul>
+            <li><a href="#">Home UU</a></li>
+            <li><a href="#">Home Science</a></li>
+            <li><a href="#">Staff</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 
 
   <div id="easy-breadcrumb-easy-breadcrumb" class="container-fluid">
-    <div class="row-fluid">
-      <div class="content">
+    <div class="row">
+      <div class="col-md-12 content">
         <div class="easy-breadcrumb">
           <a href="/" class="easy-breadcrumb_segment easy-breadcrumb_segment-front">UU.nl</a>
           <span class="easy-breadcrumb_segment-separator"> / </span>
@@ -92,8 +96,8 @@
     </div>
   </div>
 
-  <div class="container-fluid page-header">
-    <div class="row-fluid page-header-inner">
+  <div class="container-fluid">
+    <div class="row page-header">
       <div class="col-md-2 col-sm-3">
         <img src="images/egon.jpg" class="profile-picture"/>
       </div>
@@ -141,15 +145,15 @@
     <div ng-view=""></div>
   </div>
 
-    <footer>
-      <div class="container-fluid">
+  <footer>
+    <div class="container-fluid">
       <div class="footer-inner">
         <div class="footer_logo">
           <img src="images/logo_footer.svg" alt="University Utrecht">
         </div>
       </div>
-      </div>
-    </footer>
+    </div>
+  </footer>
 </div>
 
 
@@ -180,6 +184,7 @@
 <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
 <script src="bower_components/angular-touch/angular-touch.js"></script>
 <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="bower_components/underscore/underscore.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
@@ -189,6 +194,7 @@
 <script src="scripts/controllers/main.js"></script>
 <script src="scripts/controllers/cv.js"></script>
 <script src="scripts/controllers/news.js"></script>
+<script src="scripts/controllers/pubdetail.js"></script>
 <script src="scripts/controllers/publications.js"></script>
 <script src="scripts/controllers/summary.js"></script>
 <!-- endbuild -->

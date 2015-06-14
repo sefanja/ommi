@@ -1,0 +1,47 @@
+[
+  {
+    "id": "24444",
+    "title": "Fast Exact Euclidean Distance (FEED)",
+    "subtitle": "A new class of adaptable distance transforms.",
+    "reference": "Schouten, Th.E. and van den Broek, E.L. (2014) Fast Exact Euclidean Distance (FEED): A new class of adaptable distance transforms. IEEE transactions on pattern analysis and machine intelligence, 36 (11). pp. 2159-2172. ISSN 0162-8828",
+    "abstract": "A new unique class of foldable distance transforms of digital images (DT) is introduced, baptized: Fast Exact Euclidean Distance (FEED) transforms. FEED class algorithms calculate the DT starting directly from the definition or rather its inverse. The principle of FEED class algorithms is introduced, followed by strategies for their efficient implementation. It is shown that FEED class algorithms unite properties of ordered propagation, raster scanning, and independent scanning DT. Moreover, FEED class algorithms shown to have a unique property: they can be tailored to the images under investigation. Benchmarks are conducted on both the Fabbri et al. data set and on a newly developed data set. Three baseline, three approximate, and three state-of-the-art DT algorithms were included, in addition to two implementations of FEED class algorithms. It illustrates that FEED class algorithms i) provide truly exact Euclidean DT; ii) do no suffer from disconnected Voronoi tiles, which is a unique feature for non-parallel but fast DT; iii) outperform any other approximate and exact Euclidean DT with its time complexity O(N), even after their optimization; and iv) are unequaled in that they can be adapted to the characteristics of the image class at hand. The source code of all algorithms included as well as the data sets used for both benchmarks are provided as supplementary material to this article.",
+    "type": "Article",
+    "researchgroup": "EWI-HMI: Human Media Interaction",
+    "researchprogram": "CTIT-NICE: Natural Interaction in Computer-mediated Environments",
+    "researchproject": "COMMIT/P04+P05: Virtual Worlds for Well-being",
+    "additionalinfo": "This version is a slightly improved version, compared to the originally version published by IEEE.",
+    "keywords": "Fast Exact Euclidean Distance (FEED), distance transform, distance transformation, Voronoi, computational complexity, adaptive, benchmark",
+    "status": "Published",
+    "deposited": "2014-02-20",
+    "year": 2014,
+    "refereed": "Yes",
+    "international": "Yes",
+    "isi": "4.80",
+    "urls": {
+      "doi": "http://dx.doi.org/10.1109/TPAMI.2014.25",
+      "bibtex": "http://eprints.eemcs.utwente.nl/perl/export/24444/bibtex/eemcs-eprint-24444.txt",
+      "xml": "http://eprints.eemcs.utwente.nl/perl/export/24444/xml/eemcs-eprint-24444.xml"
+    }
+  },
+  {
+    "id": "24737",
+    "title": "When complexity becomes interesting",
+    "reference": "van der Sluis, F. and van den Broek, E.L. and Glassey, R.J. and van Dijk, E.M.A.G. and de Jong, F.M.G. (2014) When complexity becomes interesting. Journal of the Association for Information Science and Technology, 65 (7). pp. 1478-1500. ISSN 2330-1643",
+    "abstract": "How to provide users a positive experience during interaction with information (i.e., the “Information eXperience” (IX)) is still an open question. As a starting point, this work investigates how the emotion of interest can be influenced by modifying the complexity of the information presented to users. The appraisal theory of interest suggests a “sweet spot” where interest will be at its peak: information that is novel and complex yet still comprehensible. This “sweet spot” is approximated using two studies. Study One develops a computational model of textual complexity founded on psycholinguistic theory on processing difficulty. The model was trained and tested on 12,420 articles, achieving a classification performance of 90.87% on two classes of complexity. Study Two puts the model to its ultimate test: Its application to change the user's IX. Using 18 news articles the influence of complexity on interest and its appraisals is unveiled. A structural equation model shows a positive influence of complexity on interest, yet a negative influence of comprehensibility, confirming a seemingly paradoxical relationship between complexity and interest. By showing when complexity becomes interesting, this paper shows how information systems can use the model of textual complexity to construct an interesting IX.",
+    "type": "Article",
+    "researchgroup": "EWI-HMI: Human Media Interaction",
+    "researchprogram": "CTIT-NICE: Natural Interaction in Computer-mediated Environments",
+    "researchproject": "Puppy-IR: An Open Source Environment to construct Information Services for Children",
+    "keywords": "linguistic analysis, user satisfaction, information use, complexity, interest, information retrieval, text mining, communication, psychology, bandwidth",
+    "status": "Published",
+    "deposited": "2014-07-29",
+    "year": 2014,
+    "refereed": "Yes",
+    "international": "Yes",
+    "urls": {
+      "doi": "http://dx.doi.org/10.1002/asi.23095",
+      "bibtex": "http://eprints.eemcs.utwente.nl/perl/export/24737/bibtex/eemcs-eprint-24737.txt",
+      "xml": "http://eprints.eemcs.utwente.nl/perl/export/24737/xml/eemcs-eprint-24737.xml"
+    }
+  }
+]
