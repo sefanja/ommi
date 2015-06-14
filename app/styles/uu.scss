@@ -1,0 +1,919 @@
+@font-face {
+  font-family: "icomoon";
+  src: url(../fonts/icomoon.eot);
+  src: url(../fonts/icomoon.eot?#iefix) format("embedded-opentype"),
+  url(../fonts/icomoon.woff) format("application/font-woff"),
+  url(../fonts/icomoon.ttf) format("truetype"),
+  url(../fonts/icomoon.svg#icomoon) format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  //background-color: #f8f8f8;
+}
+
+.mceContentBody {
+  font-size: 16px !important;
+}
+
+.main table {
+  width: 100% !important;
+  border: 1px solid #ccc;
+}
+
+.main table.mceToolbar {
+  width: auto !important;
+}
+
+.main table th,
+.main table td {
+  padding: 5px !important;
+}
+.main table.mceToolbar  th,
+.main table.mceToolbar  td {
+  padding: 3px !important;
+}
+
+
+.main a {text-decoration: none;}
+
+.main a:link, .main:visited {
+  text-decoration: underline;
+}
+
+.page {
+  //max-width: 1600px;
+  margin: 0 auto;
+}
+
+/*
+*    Brandbar & title
+*
+*/
+
+.brandbar {
+  border-bottom: 1px solid #efefef;
+  height: 66px;
+}
+
+.brandbar-search {
+
+}
+
+.brandbar-search input {
+  font-family: "Open Sans","Frutiger",Helvetica,Arial,sans-serif;
+  background: none repeat scroll 0 0 #efefef;
+  border: 0 none;
+  font-size: 14px;
+  height: 30px;
+  outline: medium none;
+  padding-left: 10px;
+  padding-right: 40px;
+  width: 250px;
+  color: #a1a1a1;
+  margin: 0;
+}
+
+.searchbox {
+  margin-top: 20px;
+  position: relative;
+}
+
+#btnZoekMedewerker
+{
+  background-color: #efefef;
+  height: 30px;
+  width: 30px;
+  font-family: "icomoon";
+
+  display: inline-block;
+  color: #aaa;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4px 0 0 8px;
+}
+
+#btnZoekMedewerker:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.logodiv {
+  padding-left: 0;
+}
+
+.logodiv img {
+  height: 48px;
+  margin-top: 8px;
+}
+
+.divLanguage {
+  border-left: 1px solid #efefef;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 65px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.divLanguage a {
+  color: #787878;
+  font-family: "Open Sans","Frutiger",Helvetica,Arial,sans-serif;
+}
+
+.title, .brandbar {
+  background-color: #fff;
+}
+
+.title h1 {
+  margin: 0;
+}
+.title h1 a {
+  line-height: 52px;
+  margin: 0;
+  padding: 25px 0 28px;
+  color: #c00a35;
+  font-family: "Open Sans","Frutiger",Helvetica,Arial,sans-serif;
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 107px;
+}
+
+.footer a {
+  color: #ccc;
+}
+
+.divEdit {
+  margin-bottom: 1em;
+}
+
+/*
+*    Main menu
+*
+*/
+
+
+.divMenu {
+  background: #000;
+  font-family: "Open Sans","Frutiger",Helvetica,Arial,sans-serif;
+}
+
+.divMenu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.divMenu li {
+  float: left;
+  list-style: none;
+}
+
+.divMenu li:first-child {
+  margin-left: -20px;
+}
+
+.divMenu a {
+  color: #fff;
+  font-size: 16px;
+  padding: 15px 20px;
+  line-height: 20px;
+  transition: all 0.3s ease 0s;
+  display: block;
+}
+
+.divMenu a:hover {
+  color: #ffcd00;
+  text-decoration: none;
+}
+
+/*
+*    Content
+*
+*/
+
+#MainContent_UpdatePanelResult {
+  padding: 3em 0;
+  background: none repeat scroll 0 0 #fff;
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+}
+
+.DivProfielfoto {
+
+}
+
+.profiel-header {
+  margin-bottom: 1em;
+}
+
+.DivHeader {
+
+}
+
+.DivFunctie {
+  clear: both;
+  display: block;
+  margin-bottom: 1em;
+}
+
+.lblProfielpaginaNaam {
+  font-family: "Open Sans","Frutiger",Helvetica,Arial,sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 46px;
+
+}
+
+.lblFunctie {
+  font-family: "Open Sans","Frutiger",Helvetica,Arial,sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.profile-page {
+  padding-top: 30px;
+}
+
+/*  Footer */
+
+.footer {
+  color: #a1a1a1;
+  background: #262626;
+  padding: 40px 0;
+}
+.footer2 {
+  color: #a1a1a1;
+  background: #000000;
+  padding: 32px 0;
+}
+
+.footer2 img {
+  height: 73px;
+
+}
+
+.DivLastUpdate {
+  margin-top: 30px;
+}
+
+/*  Zoek   */
+
+.zoekDiv {background: #ffcd00;
+  padding: 30px 0;}
+
+.zoekDiv h2 {margin: 0 0 15px 0;}
+
+.LabelZoekscherm,
+.KnopZoekscherm {
+  padding-top: 5px;
+}
+
+.DivZoekveld select,
+.DivZoekveld input {
+  padding: 5px 10px;
+  background: #fff;
+  border: 0;
+  vertical-align: top;
+  border-radius: 0 !important;
+}
+
+.DivZoekveld {
+  margin-bottom: 1em;
+}
+
+.DivZoekveld.naam {
+  margin-bottom: 0;
+}
+
+.uu-button {
+  font-family: "Open Sans","Frutiger",Helvetica,Arial,sans-serif;
+  border: 1px solid #000;
+  padding: 0 19px;
+  margin-right: 15px;
+  display: inline-block;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 42px;
+}
+
+.uu-button:hover {
+  background-color: #000;
+  color: #ffcd00;
+}
+
+#MainContent_PanelGeavanceerd {
+  margin-top: 30px;
+}
+
+.DivZoekKnoppen {
+
+}
+
+.alphabet {
+  margin-top: 1em;
+}
+
+.uu-letter {
+  font-family: "Open Sans","Frutiger",Helvetica,Arial,sans-serif;
+  text-decoration: none !important;
+  display: inline-block;
+  height: 26px;
+  width: 26px;
+  line-height: 20px;
+  text-align: center;
+  background: #fff;
+  padding: 4px;
+  margin-bottom: 3px;
+}
+
+.uu-letter:hover {
+  background: #000;
+  color: #ffcd00;
+}
+
+.zoekbutton {
+  text-indent: -999px;
+}
+
+.zoekbutton:after {
+  text-indent: 0;
+}
+
+/*
+*    Tabcontent
+*
+*/
+
+.ui-tabs-panel .col-sm-9 {
+  margin-bottom: 1em;
+}
+
+.ui-tabs-panel .row,
+.profielheader .row {
+  margin-top: 1em;
+}
+
+.PublicTextareaFieldContent {
+
+
+}
+.PublicTextareaFieldContent h1 {
+  font-size: 20px;
+}
+
+.PublicLabelFieldCaptionTitle {
+  font-family: "Open Sans","Frutiger",Helvetica,Arial,sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 30px;
+
+}
+
+#MainContent_controlOnderzoek_PanelOnderzoekMetis h1 {
+  font-family: "Open Sans","Frutiger",Helvetica,Arial,sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 46px;
+}
+
+.PublicLabelFieldCaption {
+  font-family: "Open Sans","Frutiger",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.1em;
+  padding-top: 2px;
+}
+
+.PublicPanelField {
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+#MainContent_TabContainer1_TabPanelProfiel_controlProfiel_PanelOratieDatum {margin-bottom: 1em;}
+
+a {
+  color: #262626;
+  transition: color 0.1s ease-in-out 0s;
+}
+
+a:hover {
+  color: #787878;
+}
+
+#MainContent_controlProfiel_PanelAanstellingsdatum {
+  margin-top: 1em;
+}
+
+.lblPageGenerated
+{
+  font-size: 7pt;
+  color: Gray;
+  display: none;
+}
+
+.DivAdres {
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+.DivMetisElement {
+  margin: 0 0 1em 0;
+  font-size: 16px;
+}
+
+.DivMetisElement h3 {
+  font-size: 16px;
+}
+
+.DivMetisCategorie {
+  border-bottom: 1px solid #aaa;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 2em 0 1em;
+}
+
+
+.DivOnderzoeksproject {
+  border-bottom: 1px solid #ddd;
+  padding: 2em 0;
+}
+
+
+
+.GridviewOnderwijs {
+  width: 100%;
+  border: 0;
+  margin-top: 1em;
+}
+
+.GridviewOnderwijs tr {
+  border-bottom: 1px solid #aaa;
+}
+
+.GridviewOnderwijs tr:nth-child(2) {
+  background-color: #f8f8f8;
+}
+
+.GridviewOnderwijs th, .GridviewOnderwijs td {
+  padding: 5px 10px;
+}
+
+
+.LabelZoekscherm {
+}
+
+.TextboxZoekscherm {
+  border: 0;
+  padding: 3px 10px;
+}
+.search-button {
+
+}
+
+.glyphicon-search {
+  display: inline-block;
+}
+
+#MainContent_PanelSearch {
+  /*border-bottom: 1px solid #ddd;*/
+}
+
+.DivZoekResult {
+  margin-left: 50px;
+  padding: 1em 0;
+  border-bottom: 1px solid #ddd;
+}
+
+a.LinkZoekResultNaam {
+  font-size: 24px;
+  text-decoration: none;
+}
+
+
+.TableAanwezigheid {
+  width: 400px;
+}
+.TableAanwezigheid tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.TableAanwezigheid td {
+  padding: 5px 0;
+}
+
+.project-header {
+  margin-bottom: 1em;
+}
+
+/*   jquery tabs  */
+
+.ui-widget-header {
+  background: none !important;
+  border: 0px !important;
+}
+
+.ui-tabs {
+  border: 0 !important;
+  font-family: 'Merriweather', serif !important;
+  font-size: 16px !important;
+}
+
+.ui-tabs .ui-tabs-panel {
+  border-top: 1px solid #aaa;
+}
+
+.ui-tabs .ui-tabs-nav {
+  padding: 0.2em 0.2em 0 0 !important;
+}
+
+.ui-tabs .ui-tabs-nav li {
+  margin-right: -1px !important;
+  margin-bottom: -1px !important;
+  font-family: "Open Sans","Frutiger",Helvetica,Arial,sans-serif !important;
+  font-size: 15px;
+
+}
+
+.ui-tabs .ui-tabs-nav li a:focus {
+  outline: 0;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  background: #eee !important;
+}
+
+.ui-widget-header .ui-tabs-active {
+  background: #fff !important;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+  border-top-right-radius: 0px !important;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+  border-top-left-radius: 0px !important;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+  border-bottom-right-radius: 0px !important;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+  border-bottom-left-radius:  0px !important;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+  border-top-right-radius:  0px !important;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+  border-top-left-radius:  0px !important;
+}
+
+.ui-tabs .ui-tabs-panel {
+  background: #fff !important;
+  border: 1px solid #aaa !important;
+  padding: 2em !important;
+}
+.ui-widget-content {
+  background: transparent !important;
+}
+
+.PaginaIndexLetterHeader {
+  background: #000;
+  color: #ffcd00;
+  margin: 2em 0 1em;
+  padding: 5px 10px;
+}
+
+.NodeLevel2 {
+  margin-left: 0px;
+}
+
+.NodeLevel3 {
+  margin-left: 25px;
+}
+
+.NodeLevel4 {
+  margin-left: 50px;
+}
+
+.DivPager {
+  margin-top: 1em;
+  margin: 20px auto;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .title h1 a {
+    color: #c00a35;
+    font-family: "Open Sans","Frutiger",Helvetica,Arial,sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 80px;
+    padding: 15px;
+  }
+  .divMenu li:first-child {
+    margin-left: -5px;
+  }
+  .logodiv img {
+    margin-left: 15px;
+  }
+  .footer, .footer2 {
+    padding-left: 15px;
+  }
+  .brandbar-search input {
+    width: 125px;
+  }
+  .lblProfielpaginaNaam {
+    font-size: 26px;
+    line-height: 35px;
+  }
+}
+
+
+/*   Admin   */
+
+textarea, input[type='text']
+{width: 100%;}
+
+.ui-dialog {
+  background: #fff !important;
+}
+
+.ui-dialog table {
+  width: 100%;
+}
+
+
+
+.ui-dialog td {
+  padding: 5px 10px !important;
+  border: 0 !important;
+}
+
+.ui-dialog table tr {
+  border-bottom: 1px solid #aaa !important;
+}
+
+.DivBeheerColToelichting {
+  font-size: 0.9em !important;
+  font-family: "Open Sans","Frutiger",Helvetica,Arial,sans-serif !important;
+  padding: 10px;
+  background: #eee;
+  min-height: 72px;
+}
+
+.DivBeheerKnoppen {
+  margin: 0 0 2em 0;
+}
+.ui-tabs .DivBeheerColToelichting {
+  background: #f8f8f8;
+  margin-bottom: 5px;
+}
+
+.InternalLabelFieldCaption,
+.DivBeheerColCaption {
+  font-size: 18px;
+  font-weight: bold;
+
+}
+
+.InternalPanelFieldValue {
+  margin-top: 1em;
+}
+
+.DivBeheerInfoPng {
+  float: left;
+
+  margin: 0 10px 10px 0;
+}
+
+.DivBeheerInfoPng img {
+  width: 20px;
+  height: 20px;
+}
+
+.DivBeheerInfoTekst {
+
+}
+
+.profiel-item {
+  margin-bottom: 1em;
+}
+
+table#MainContent_controlProfiel_EditorProfieltekstNL_txtEditor_tbl.mceLayout,
+table#MainContent_controlProfiel_EditorProfieltekstEN_txtEditor_tbl {
+  width: 100% !important;
+}
+
+input[type='checkbox'] {
+  margin-right: 10px;
+}
+
+input[type='radio'] {
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+#MainContent_controlHeader_ZichtbaarheidProfielfoto_lblZichtbaarheid {
+  width: 100%;
+  display: block;
+}
+
+#MainContent_controlOnderzoek_lblOnderzoekVrijetekst {
+  margin-top: 2em;
+  display: block;
+}
+
+#MainContent_controlContact_ZichtbaarheidMobiel_lblZichtbaarheid,
+#MainContent_controlContact_ZichtbaarheidEmail_lblZichtbaarheid,
+#MainContent_controlContact_ZichtbaarheidFax_lblZichtbaarheid {
+  margin-top: 1em;
+  display: block;
+}
+
+#MainContent_controlProfiel_CheckBoxListFocusgebieden label {
+  display: inline ;
+}
+
+.GridExpertise td, .GridExpertise th,
+.GridLinks td, .GridLinks th {
+  border: 0 !important;
+  padding: 5px 10px !important;
+}
+
+.GridExpertise tr {
+  border: 1px solid #aaa !important;
+}
+
+.GridLinksColUrlNL, .GridLinksColUrlEN{
+  word-break: break-all;
+}
+
+.GridButtonsInternal input {
+  margin-right: 10px;
+}
+
+.radio input[type=radio], .radio-inline input[type=radio], .checkbox input[type=checkbox], .checkbox-inline input[type=checkbox] {
+  position: relative;
+  margin-left: 0;
+
+}
+
+.lblFoutmelding {
+
+  color: red;
+
+}
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+  font-family: "Open Sans","Frutiger",Helvetica,Arial,sans-serif !important;
+  font-size: 15px !important;
+}
+
+.file {
+  margin: 1em 0;
+}
+
+#divAutocomplete {
+  z-index: 10000;
+}
+
+.AutoExtender {
+  background: #fff;
+  border: 1px solid #aaa;
+  padding: 5px;
+  font-family: "Open Sans","Frutiger",Helvetica,Arial,sans-serif;
+}
+
+.AutoExtenderHighlight {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.AdminSubheader {
+
+}
+
+
+/* UI-grids op Admin-schermen */
+.gridStyle
+{
+  border: 1px solid rgb(212,212,212);
+}
+.ngRow.selected {
+  background-color: #FFCD00;
+}
+
+.gridStyleFocusgebieden {
+  width: 900px;
+  height: 400px
+}
+
+.gridStyleFuncties {
+  width: 900px;
+  height: 400px
+}
+
+.gridStyleOpleidingen {
+  width: 900px;
+  height: 400px
+}
+
+.gridStyleVelden {
+  width: 380px;
+  height: 400px
+}
+
+.gridStyleBeheerders {
+  width: 380px;
+  height: 400px
+}
+
+.gridStyleMailteksten {
+  width: 900px;
+  height: 400px
+}
+
+.gridStyleOM
+{
+  width: 900px;
+  height: 300px;
+}
+.DivMetisElementCbInt {
+  width: 10%;
+  float: right;
+}
+.DivMetisElementInt {
+  float: left;
+  width: 75%;
+  clear: left;
+  margin-bottom: 1em;
+  min-height: 2em;
+}
+
+.divSocialMediaIcons {
+  margin-bottom: 2em;
+}
+.divSocialMediaIcon {
+  float: left;
+  margin-right: 10px;
+}
+
+.ui-tabs {
+  padding: 0 !important;
+}
+
+.PublicTextareaFieldContent {
+  font-family: 'Merriweather', serif !important;
+  font-size: 16px !important;
+  color:  #222 !important;
+}
+
+.PublicTextareaFieldContent h1,
+.PublicTextareaFieldContent h2,
+.PublicTextareaFieldContent h3,
+.PublicTextareaFieldContent h4 {
+  font-weight: 300 !important;
+  font-size: 30px !important;
+  color:  #222 !important;
+}
+
+/* Mattijs, 22-JAN-2015: toegevoegd om te voorkomen dat sleutelpublicaties in 30px verschijnen. */
+.DivMetisElement h3,
+.DivMetisElement h4
+{
+  font-size: 16px !important;
+}
+/* Mattijs einde aanpassing 22-JAN-2015 */
+
+.aspNetDisabled {
+  background-color: #eee;
+  border: 0px;
+}
+
+.aspNetDisabled:hover {
+  cursor: normal;
+}
+
+
+#MainContent_controlProfiel_CheckBoxListFocusgebieden label,
+#MainContent_controlPublicaties_cblOutputtype label {
+  font-weight: normal;
+}
+
+.Panelafbeelding {
+  margin-bottom: 2em;
+}
+
+.PanelAfbeeldingImage {
+  margin-bottom: 1em;
+}
