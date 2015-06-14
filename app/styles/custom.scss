@@ -68,6 +68,14 @@ html, body {
   line-height: 107px;
 }
 
+h2 {
+  margin: 0 0 4px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
 /* Page header */
 .page-header {
   position: relative;
@@ -111,11 +119,10 @@ html, body {
   }
 }
 
-
 /* Profile content */
 .profile-content {
-  margin-top: 64px;
-  margin-bottom: 64px;
+  margin-top: 55px;
+  margin-bottom: 55px;
 }
 
 /* Footer */
@@ -131,7 +138,6 @@ footer {
     height: 73px;
   }
 }
-
 
 /*
 .page-header .link {
