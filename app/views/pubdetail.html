@@ -7,20 +7,21 @@
     <div class="row">
       <div class="col-md-2"></div>
       <div class="col-md-10">
-        <p>
-          <span ng-if="pub.urls.doi">
-            <a ng-href="pub.urls.doi" target="_blank" class="publink"><img src="images/doi.png">DOI</a>
-          </span>
-          <a href="http://eprints.ewi.utwente.nl/{{pub.id}}" target="_blank" class="publink"><img src="images/eprints.png">EPrints</a>
-          <span ng-if="pub.urls.pdf">
-            <a ng-href="pub.urls.pdf" target="_blank" class="publink"><img src="images/pdf.png">PDF</a>
-          </span>
-          <span ng-if="pub.urls.bibtex">
-            <a ng-href="pub.urls.bibtex" target="_blank" class="publink"><img src="images/bibtex.png">BibTeX</a>
-          </span>
-          <span ng-if="pub.urls.xml">
-            <a ng-href="pub.urls.xml" target="_blank" class="publink"><img src="images/xml.png">XML</a>
-          </span>
+        <div ng-if="pub.urls.doi" class="publink">
+          <a ng-href="{{pub.urls.doi}}" target="_blank"><img src="images/doi.png"><br>DOI</a>
+        </div>
+        <div class="publink">
+          <a ng-href="http://eprints.ewi.utwente.nl/{{pub.id}}" target="_blank"><img src="images/eprints.png"><br>EPrints</a>
+        </div>
+        <div ng-if="pub.urls.pdf" class="publink">
+          <a ng-href="{{pub.urls.pdf}}" target="_blank"><img src="images/pdf.png"><br>PDF</a>
+        </div>
+        <div ng-if="pub.urls.bibtex" class="publink">
+          <a ng-href="{{pub.urls.bibtex}}" target="_blank"><img src="images/bibtex.png"><br>BibTeX</a>
+        </div>
+        <div ng-if="pub.urls.xml" class="publink">
+          <a ng-href="{{pub.urls.xml}}" target="_blank"><img src="images/xml.png"><br>XML</a>
+        </div>
         <br><br>
       </div>
     </div>

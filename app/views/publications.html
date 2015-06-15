@@ -8,15 +8,16 @@
 <br><br>
 
 <div ng-repeat="year in years | orderBy:'-'">
-  <div ng-repeat="pub in publications | filter:searchText | filter: {year: year} | orderBy:'-deposited'">
+  <div ng-repeat="pub in publications | filter: {year: year} | filter:searchText | orderBy:'-deposited'">
 
     <div class="row">
       <div class="col-md-1">
         <h2 ng-if="$first">{{year}}</h2>
       </div>
       <div class="col-md-11">
-        <p><a href="" ng-click="openPubDetailModal(pub)">{{pub.title}}<span
-          ng-if="pub.subtitle">: {{pub.subtitle}}</span></a></p>
+        <p><a href="" ng-click="openPubDetailModal(pub)"><span ng-bind-html="highlight(pub.title, searchText)"></span><span
+          ng-if="pub.subtitle">:</span>
+          <span ng-bind-html="highlight(pub.subtitle, searchText)"></span></a></p>
       </div>
     </div>
     <div class="row">

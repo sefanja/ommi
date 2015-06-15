@@ -133,7 +133,7 @@ h2 {
 
 /* Highlight */
 .highlightedText {
-  background: yellow;
+  background: #ffcd00;
 }
 
 
@@ -155,13 +155,14 @@ body .modal-dialog {
   }
 }
 
-
 .publink {
-  margin-right: 20px;
-  img {
-    margin-right: 5px;
-  }
+  display: inline-block;
+  margin-bottom: 20px;
+  width: 90px;
+  text-align: center;
 }
+
+
 
 /* Footer */
 footer {
