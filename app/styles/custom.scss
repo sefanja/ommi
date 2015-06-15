@@ -1,6 +1,8 @@
 $screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
 
-/* Fonts */
+  /* Fonts */
 html, body {
   font-family: "Open Sans", sans-serif !important;
 }
@@ -8,13 +10,6 @@ html, body {
 /* Obscure mail address from spambots */
 .domain::before {
   content: "\0040"; /* Unicode character for @ symbol */
-}
-
-/* Margin between stacking columns */
-@media (max-width: $screen-sm-min) {
-  [class*="col-"]:not(:first-child) {
-    margin-top: 15px;
-  }
 }
 
 
@@ -125,9 +120,26 @@ h2 {
 }
 
 
-/* Modals */
+/* Search box */
+.search {
+  background-color: #efefef;
+  border: 0;
+  height: 30px;
+  width: 250px;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+
+/* Highlight */
+.highlightedText {
+  background: yellow;
+}
+
+
+/* Modal */
 body .modal-dialog {
-  @media (min-width: $screen-sm-min) {
+  @media (min-width: $screen-md-min) {
     width: 90%;
   }
 }
@@ -143,6 +155,13 @@ body .modal-dialog {
   }
 }
 
+
+.publink {
+  margin-right: 20px;
+  img {
+    margin-right: 5px;
+  }
+}
 
 /* Footer */
 footer {

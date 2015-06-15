@@ -7,7 +7,21 @@
     <div class="row">
       <div class="col-md-2"></div>
       <div class="col-md-10">
-        <p><img src="images/doi.png"> DOI &nbsp; &nbsp; &nbsp; <img src="images/pdf.png"> PDF</p><br/>
+        <p>
+          <span ng-if="pub.urls.doi">
+            <a ng-href="pub.urls.doi" target="_blank" class="publink"><img src="images/doi.png">DOI</a>
+          </span>
+          <a href="http://eprints.ewi.utwente.nl/{{pub.id}}" target="_blank" class="publink"><img src="images/eprints.png">EPrints</a>
+          <span ng-if="pub.urls.pdf">
+            <a ng-href="pub.urls.pdf" target="_blank" class="publink"><img src="images/pdf.png">PDF</a>
+          </span>
+          <span ng-if="pub.urls.bibtex">
+            <a ng-href="pub.urls.bibtex" target="_blank" class="publink"><img src="images/bibtex.png">BibTeX</a>
+          </span>
+          <span ng-if="pub.urls.xml">
+            <a ng-href="pub.urls.xml" target="_blank" class="publink"><img src="images/xml.png">XML</a>
+          </span>
+        <br><br>
       </div>
     </div>
     <div class="row">
@@ -58,7 +72,7 @@
         <p>{{pub.researchprogram}}</p>
       </div>
     </div>
-    <div class="row">
+    <div class="row" ng-if="pub.researchproject">
       <div class="col-md-2">
         <h2 class="attr">Research project</h2>
       </div>
@@ -88,6 +102,14 @@
       </div>
       <div class="col-md-10">
         <p>{{pub.refereed}}</p>
+      </div>
+    </div>
+    <div class="row" ng-if="pub.isi">
+      <div class="col-md-2">
+        <h2 class="attr">ISI impact factor</h2>
+      </div>
+      <div class="col-md-10">
+        <p>{{pub.isi}}</p>
       </div>
     </div>
   </div>

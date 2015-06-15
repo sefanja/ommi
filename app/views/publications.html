@@ -1,23 +1,37 @@
-<div ng-repeat="year in years | orderBy">
-  <div ng-repeat="pub in publications | filter: {year: year} | orderBy: '-deposited'">
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-11">
+    <input ng-model="searchText" placeholder="Search publications" class="search">
+  </div>
+</div>
+
+<br><br>
+
+<div ng-repeat="year in years | orderBy:'-'">
+  <div ng-repeat="pub in publications | filter:searchText | filter: {year: year} | orderBy:'-deposited'">
+
     <div class="row">
       <div class="col-md-1">
         <h2 ng-if="$first">{{year}}</h2>
       </div>
       <div class="col-md-11">
-        <p><a href="" ng-click="openPubDetailModal(pub)">{{pub.title}}<span ng-if="pub.subtitle">: {{pub.subtitle}}</span></a></p>
+        <p><a href="" ng-click="openPubDetailModal(pub)">{{pub.title}}<span
+          ng-if="pub.subtitle">: {{pub.subtitle}}</span></a></p>
       </div>
     </div>
     <div class="row">
       <div class="col-md-1"></div>
       <div class="col-md-9">
-        <p>{{pub.abstract | limitTo:250}} . . .</p>
+        <p ng-if="!searchText">{{pub.abstract | limitTo:250}} . . .</p>
 
-        <p class="reference">{{pub.reference}}</p>
+        <p ng-if="searchText" ng-bind-html="highlight(pub.abstract, searchText)"></p>
+
+        <p ng-if="searchText">Keywords: <span ng-bind-html="highlight(pub.keywords, searchText)"></span></p>
+
+        <p class="reference" ng-bind-html="highlight(pub.reference, searchText)"></p>
       </div>
-      <div class="col-md-1"></div>
-      <div class="col-md-1">
-        <p class="pubtype">{{pub.type}}</p>
+      <div class="col-md-2">
+        <p class="pubtype" ng-bind-html="highlight(pub.type, searchText)"></p>
       </div>
     </div>
     <div class="row">&nbsp;</div>

@@ -19,6 +19,7 @@
     "isi": "4.80",
     "urls": {
       "doi": "http://dx.doi.org/10.1109/TPAMI.2014.25",
+      "pdf": "http://eprints.eemcs.utwente.nl/24444/01/Schouten_VandenBroekXX-Fast_Exact_Euclidean_Distance_FEED_IMPROVED-VERSION.pdf",
       "bibtex": "http://eprints.eemcs.utwente.nl/perl/export/24444/bibtex/eemcs-eprint-24444.txt",
       "xml": "http://eprints.eemcs.utwente.nl/perl/export/24444/xml/eemcs-eprint-24444.xml"
     }
@@ -40,8 +41,52 @@
     "international": "Yes",
     "urls": {
       "doi": "http://dx.doi.org/10.1002/asi.23095",
+      "pdf": "http://eprints.eemcs.utwente.nl/24737/01/VanderSluisXX-When_complexity_becomes_interesting.pdf",
       "bibtex": "http://eprints.eemcs.utwente.nl/perl/export/24737/bibtex/eemcs-eprint-24737.txt",
       "xml": "http://eprints.eemcs.utwente.nl/perl/export/24737/xml/eemcs-eprint-24737.xml"
+    }
+  },
+  {
+    "id": "25143",
+    "title": "Foraging Online Social Networks",
+    "reference": "Koot, G. and Huis in ’t Veld, M.A.A. and Hendricksen, J. and Kaptein, R. and de Vries, A. and van den Broek, E.L. (2014) Foraging Online Social Networks. In: Proceedings of the 2014 IEEE Joint Intelligence and Security Informatics Conference (JISIC2014), 24-26 Sep 2014, The Hague, The Netherlands. pp. 312-315. IEEE Computer Society. ISBN 978-1-4799-6364-5",
+    "abstract": "A concise and practical introduction is given on Online Social Networks (OSN) and their application in law enforcement, including a brief survey of related work. Subsequently, a tool is introduced that can be used to search OSN in order to generate user profiles. Both its architecture and processing pipeline are described. This tool is meant as a flexible framework that supports manual foraging (and not replaces it). As such, we aim to bridge science’s state-of-the-art and current security officer’s practice. This article ends with a brief discussion on privacy and ethical issues and future work.",
+    "type": "Conference or Workshop Paper (Full Paper, Talk)",
+    "researchgroup": "EWI-HMI: Human Media Interaction",
+    "researchprogram": "CTIT-NICE: Natural Interaction in Computer-mediated Environments",
+    "keywords": "Online Social Networks, forensics, security, information management",
+    "status": "Published",
+    "deposited": "2014-12-08",
+    "year": 2014,
+    "refereed": "Yes",
+    "international": "Yes",
+    "urls": {
+      "doi": "http://dx.doi.org/10.1109/JISIC.2014.62",
+      "pdf": "http://eprints.eemcs.utwente.nl/25143/01/Koot14-Foraging_Online_Social_Networks.pdf",
+      "bibtex": "http://eprints.eemcs.utwente.nl/perl/export/25143/bibtex/eemcs-eprint-25143.txt",
+      "xml": "http://eprints.eemcs.utwente.nl/perl/export/25143/xml/eemcs-eprint-25143.xml"
+    }
+  },
+  {
+    "id": "23355",
+    "title": "Motor, emotional, and cognitive empathy in children and adolescents with autism spectrum disorder and conduct disorder",
+    "reference": "Bons, D. and van den Broek, E.L. and Scheepers, F. and Herpers, P. and Rommelse, N. and Buitelaar, J.K. (2013) Motor, emotional, and cognitive empathy in children and adolescents with autism spectrum disorder and conduct disorder. Journal of Abnormal Child Psychology, 41 (3). pp. 425-443. ISSN 0091-0627",
+    "abstract": "It is unclear which aspects of empathy are shared and which are uniquely affected in autism spectrum disorder (ASD) and conduct disorder (CD) as are the neurobiological correlates of these empathy impairments. The aim of this systematic review is to describe the overlap and specificity of motor, emotional, and cognitive aspects of empathy in children and adolescents with ASD or CD. Motor and cognitive empathy impairments are found in both ASD and CD, yet the specificity seems to differ. In ASD facial mimicry and emotion recognition may be impaired for all basic emotions, whereas in CD this is only the case for negative emotions. Emotional empathy and the role of attention to the eyes therein need further investigation. We hypothesize that impaired motor and cognitive empathy in both disorders are a consequence of lack of attention to the eyes. However, we hypothesize major differences in emotional empathy deficits between ASD and CD, probably due to emotional autonomic and amygdala hyper-responsivity in ASD versus hypo-responsivity in CD, both resulting in lack of attention to the eyes.",
+    "type": "Article",
+    "researchgroup": "EWI-HMI: Human Media Interaction",
+    "researchprogram": "CTIT-NICE: Natural Interaction in Computer-mediated Environments",
+    "keywords": "Empathy, Autism spectrum disorders, Conduct disorder, Facial expression, Emotion, physiology, psychology, biosignals, biofeedback, diagnostic support",
+    "status": "Published",
+    "deposited": "2013-06-10",
+    "year": 2013,
+    "refereed": "Yes",
+    "international": "Yes",
+    "isi": "3.01",
+    "urls": {
+      "doi": "http://dx.doi.org/10.1007/s10802-012-9689-5",
+      "pdf": "http://eprints.eemcs.utwente.nl/23355/01/Bons13-Motor_emotional_and_cognitive_empathy_in_children_and_adolescents_with_autism_and_conduct_disorder.pdf",
+      "bibtex": "http://eprints.eemcs.utwente.nl/perl/export/23355/bibtex/eemcs-eprint-23355.txt",
+      "xml": "http://eprints.eemcs.utwente.nl/perl/export/23355/xml/eemcs-eprint-23355.xml"
     }
   }
 ]
