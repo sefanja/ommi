@@ -8,7 +8,7 @@
  * Controller of the ommiApp
  */
 angular.module('ommiApp')
-  .controller('MainCtrl', function ($scope, $http, $modal, $sce) {
+  .controller('MainCtrl', function ($scope, $http) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -19,9 +19,9 @@ angular.module('ommiApp')
       $scope.address = data;
     });
 
-    $scope.isMobile = isMobile();
+    $scope.isMobile = function() {};
 
     $scope.createMobilePhoneNr = function(telnr) {
-      return "tel:"+telnr.replace(/\s+/g, '')
-    }
+      return 'tel:'+telnr.replace(/\s+/g, '');
+    };
   });

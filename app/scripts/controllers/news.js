@@ -9,12 +9,6 @@
  */
 angular.module('ommiApp')
   .controller('NewsCtrl', function ($scope, $http, $modal, $sce) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-
     $http.get('api/news.json').success(function (data) {
       $scope.newsitems = data;
     });
@@ -32,9 +26,9 @@ angular.module('ommiApp')
 
     $scope.formatDate =  function(date) {
       var formatedDate = new Date(date);
-      var day = formatedDate.getDate()
-      var month = formatedDate.getMonth()
+      var day = formatedDate.getDate();
+      var month = formatedDate.getMonth();
 
-      return  (day<10?"0"+day:day) +"-" + (month<10?"0"+month:month) +"-"+ formatedDate.getFullYear();
-    }
+      return  (day<10?'0'+day:day) +'-'+ (month<10?'0'+month:month) +'-'+ formatedDate.getFullYear();
+    };
   });
