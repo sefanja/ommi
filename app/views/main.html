@@ -3,7 +3,11 @@
     <h2>{{address.phone.title}}</h2>
   </div>
   <div class="col-md-10 col-sm-9" >
-    <p ng-repeat="tel in address.phone.numbers" class="nomargin">{{tel.number}} <span ng-show="tel.type">({{tel.type}})</span></p>
+    <p ng-repeat="tel in address.phone.numbers" class="nomargin">
+      <span ng-show="isMobile"><a hef="{{createMobilePhoneNr(tel.number)}}">{{tel.number}}</a></span>
+      <span ng-hide="isMobile">{{tel.number}}</span>
+      <span ng-show="tel.type">({{tel.type}})</span>
+    </p>
   </div>
 </div>
 

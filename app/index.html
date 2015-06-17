@@ -204,6 +204,11 @@
       $(".navbar-toggle").click();
     });
   });
+
+  function isMobile() {
+    try{ document.createEvent("TouchEvent"); return true; }
+    catch(e){ return false; }
+  }
 </script>
 
 </body>

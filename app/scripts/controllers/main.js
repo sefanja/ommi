@@ -19,4 +19,9 @@ angular.module('ommiApp')
       $scope.address = data;
     });
 
+    $scope.isMobile = isMobile();
+
+    $scope.createMobilePhoneNr = function(telnr) {
+      return "tel:"+telnr.replace(/\s+/g, '')
+    }
   });
