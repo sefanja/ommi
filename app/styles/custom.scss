@@ -190,6 +190,7 @@ footer {
   content: '\25bc';
   font-size: 12px;
 }
+.newline,
 .heading {
   margin-bottom: 1em;
 }
@@ -198,6 +199,9 @@ footer {
 }
 .page-header a img {
   margin-right: 0.5em;
+}
+.nomargin {
+  margin: 0;
 }
 /*
 .page-header .link {

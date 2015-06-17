@@ -1,43 +1,27 @@
-<div class="row">
-
-  <div class="col-md-3 col-sm-5">
-    <h2>Phone</h2>
+<div class="row newline" ng-show="address.phone">
+  <div class="col-md-2 col-sm-3">
+    <h2>{{address.phone.title}}</h2>
   </div>
-  <div class="col-md-9 col-sm-7">
-    <p>+31 30 253 5966 (direct)<br/>
-      +31 30 253 7088 (department)</p>
+  <div class="col-md-10 col-sm-9" >
+    <p ng-repeat="tel in address.phone.numbers" class="nomargin">{{tel.number}} <span ng-show="tel.type">({{tel.type}})</span></p>
   </div>
 </div>
 
-<div class="row">&nbsp;</div>
-
-<div class="row">
-  <div class="col-md-3 col-sm-5">
-    <h2>Physical address</h2>
+<div class="row newline"  ng-repeat="address in address.address">
+  <div class="col-md-2 col-sm-3">
+    <h2>{{address.type}}</h2>
   </div>
-  <div class="col-md-9 col-sm-7">
-    <p>Buys Ballotgebouw</p>
-    <p>Princetonplein 5<br/>
-    Room BBL-477<br/>
-    3584 CC &nbsp;Utrecht<br/>
-    The Netherlands</p>
-    <p>
-      <a href="https://www.google.nl/maps/place/Buys+Ballotgebouw/@52.08723,5.1654,15z/data=!4m2!3m1!1s0x0:0x71bd1424c2401f77" title="View on Google Maps" target="_blank">
+  <div class="col-md-10 col-sm-9" >
+    <p ng-show="address.building">{{address.building}}</p>
+    <p ng-show="address.room" class="nomargin">{{address.roomlabel}} {{address.room}}</p>
+    <p ng-show="address.street" class="nomargin">{{address.street}}</p>
+    <p ng-show="address.postcode" class="nomargin">{{address.postcode}} {{address.city}}</p>
+    <p ng-show="address.country">{{address.country}}</p>
+    <p ng-show="address.googlemaps">
+      <a href="https://www.google.nl/maps/place/{{address.googlemaps}}" title="View on Google Maps" target="_blank">
         <img src="images/maps.png" alt="Google Maps"/>
       </a>
     </p>
   </div>
 </div>
 
-<div class="row">&nbsp;</div>
-
-<div class="row">
-  <div class="col-md-3 col-sm-5">
-    <h2>Postal address</h2>
-  </div>
-  <div class="col-md-9 col-sm-7">
-    <p>Postbus 80.089<br/>
-      3508 TB &nbsp;Utrecht<br/>
-      The Netherlands</p>
-  </div>
-</div>

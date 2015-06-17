@@ -1,0 +1,35 @@
+{
+  "phone": {
+    "title": "Phone",
+    "numbers": [
+      {
+        "type": "direct",
+        "number": "+31 30 253 5966"
+      },
+      {
+        "type": "department",
+        "number": "+31 30 253 7088"
+      }
+    ]
+  },
+  "address": [
+    {
+      "type": "Physical address",
+      "building": "Buys Ballotgebouw",
+      "roomlabel": "Room",
+      "room": "BBL-477",
+      "street": "Princetonplein 5",
+      "postcode": "3584 CC",
+      "city": "Utrecht",
+      "country": "The Netherlands",
+      "googlemaps": "Buys+Ballotgebouw/@52.08723,5.1654,15z/data=!4m2!3m1!1s0x0:0x71bd1424c2401f77"
+    },
+    {
+      "type": "Postal address",
+      "street": "Postbus 80089",
+      "postcode": "3508 TB",
+      "city": "Utrecht",
+      "country": "The Netherlands"
+    }
+  ]
+}

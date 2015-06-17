@@ -4,7 +4,7 @@
     <span class="sortorder" ng-show="predicate === 'date'" ng-class="{reverse:reverse}"></span>
   </div>
 </div>
-<div class="row" ng-repeat="newsitem in newsitems | orderBy:predicate:reverse">
+<div class="row newline" ng-repeat="newsitem in newsitems | orderBy:predicate:reverse">
   <div class="col-md-2 col-sm-2">
     <h2>{{formatDate(newsitem.date)}}</h2>
     <span>{{newsitem.time}}</span>
