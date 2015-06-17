@@ -1,14 +1,18 @@
 <div class="row heading">
-  <div class="col-md-1 col-sm-1">
+  <div class="col-md-2 col-sm-3">
     <a href="" ng-click="order('year')">Year</a>
     <span class="sortorder" ng-show="predicate === 'year'" ng-class="{reverse:reverse}"></span>
   </div>
+  <div class="col-md-10 col-sm-9">
+    &nbsp;
+  </div>
 </div>
+
 <div class="row" ng-repeat="cv in cvs | orderBy:predicate:reverse">
-  <div class="col-md-1 col-sm-1">
+  <div class="col-md-2 col-sm-3">
     <h2>{{cv.year}}</h2>
   </div>
-  <div class="col-md-11 col-sm-11">
+  <div class="col-md-10 col-sm-9">
     <p  ng-bind-html="renderHtml(cv.abstract)"></p>
   </div>
 </div>
