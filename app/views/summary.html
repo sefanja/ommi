@@ -1,1 +1,9 @@
-<p>This is the summary view.</p>
+<div class="row heading">
+  <div class="col-md-1 col-sm-1">
+    &nbsp;
+  </div>
+  <div class="col-md-11 col-sm-11">
+    <h2>{{summary.title}}</h2>
+    <p ng-bind-html="renderHtml(summary.summaryText)"></p>
+  </div>
+</div>
