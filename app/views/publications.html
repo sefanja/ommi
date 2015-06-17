@@ -22,7 +22,7 @@
     </div>
     <div class="row">
       <div class="col-md-1"></div>
-      <div class="col-md-9">
+      <div class="col-md-5">
         <p ng-if="!searchText">{{pub.abstract | limitTo:250}} . . .</p>
 
         <p ng-if="searchText" ng-bind-html="highlight(pub.abstract, searchText)"></p>
@@ -31,7 +31,7 @@
 
         <p class="reference" ng-bind-html="highlight(pub.reference, searchText)"></p>
       </div>
-      <div class="col-md-2">
+      <div class="col-md-6">
         <p class="pubtype" ng-bind-html="highlight(pub.type, searchText)"></p>
       </div>
     </div>

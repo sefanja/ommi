@@ -8,10 +8,26 @@
  * Controller of the ommiApp
  */
 angular.module('ommiApp')
-  .controller('CvCtrl', function ($scope) {
+      .controller('CvCtrl', function ($scope, $http, $modal, $sce) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
+
+    $http.get('api/cv.json').success(function (data) {
+      $scope.cvs = data;
+      $scope.years = _.unique(_.pluck(data, 'year'));
+    });
+
+    $scope.renderHtml = function (htmlCode) {
+      return $sce.trustAsHtml(htmlCode);
+    };
+
+    $scope.predicate = 'year';
+    $scope.reverse = true;
+    $scope.order = function(predicate) {
+      $scope.reverse = ($scope.predicate === predicate) ? !$scope.reverse : false;
+      $scope.predicate = predicate;
+    };
   });

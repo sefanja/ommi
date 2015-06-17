@@ -1,3 +1,14 @@
-<p>Dit is een test This is the CV view.</p>
-<p>Lorem ipsum</p>
-
+<div class="row heading">
+  <div class="col-md-1 col-sm-1">
+    <a href="" ng-click="order('year')">Year</a>
+    <span class="sortorder" ng-show="predicate === 'year'" ng-class="{reverse:reverse}"></span>
+  </div>
+</div>
+<div class="row" ng-repeat="cv in cvs | orderBy:predicate:reverse">
+  <div class="col-md-1 col-sm-1">
+    <h2>{{cv.year}}</h2>
+  </div>
+  <div class="col-md-11 col-sm-11">
+    <p  ng-bind-html="renderHtml(cv.abstract)"></p>
+  </div>
+</div>
