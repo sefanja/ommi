@@ -1,6 +1,6 @@
 <div class="row heading">
   <div class="col-md-2 col-sm-3">
-    <a href="" ng-click="order('year')">Year</a>
+    <a href="" ng-click="order('year')">{{cvs.orderLabel}}</a>
     <span class="sortorder" ng-show="predicate === 'year'" ng-class="{reverse:reverse}"></span>
   </div>
   <div class="col-md-10 col-sm-9">
@@ -8,7 +8,7 @@
   </div>
 </div>
 
-<div class="row" ng-repeat="cv in cvs | orderBy:predicate:reverse">
+<div class="row" ng-repeat="cv in cvs.items | orderBy:predicate:reverse">
   <div class="col-md-2 col-sm-3">
     <h2>{{cv.year}}</h2>
   </div>
@@ -16,3 +16,5 @@
     <p  ng-bind-html="renderHtml(cv.abstract)"></p>
   </div>
 </div>
+
+<div class="lastmodified">{{cvs.lastmodified.label}} {{cvs.lastmodified.date | date:'dd MMM yyyy'}}</div>

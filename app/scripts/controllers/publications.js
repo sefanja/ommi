@@ -13,8 +13,12 @@ angular.module('ommiApp')
   .controller('PublicationsCtrl', function ($scope, $http, $modal, $sce) {
     $http.get('api/publications.json').success(function (data) {
       $scope.publications = data;
-      $scope.years = _.unique(_.pluck(data, 'year'));
+      $scope.years = _.unique(_.pluck(data.items, 'year'));
+      $scope.types = _.unique(_.pluck(data.items, 'type'));
+
     });
+
+    $scope.pubType = '';
 
     $scope.openPubDetailModal = function (publication) {
       $modal.open({
@@ -34,5 +38,13 @@ angular.module('ommiApp')
         return $sce.trustAsHtml(text);
       }
       return $sce.trustAsHtml(decodeURI(encodeURI(text).replace(new RegExp(search, 'gi'), '<span class="highlightedText">$&</span>')));
+    };
+
+    $scope.pubTypeSelector = function() {
+
+      if ($scope.pubType && $scope.publications && $scope.pubType !== $scope.publications.allTypesLabel) {
+        return $scope.pubType;
+      }
+      return '';
     };
   });

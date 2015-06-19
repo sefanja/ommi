@@ -27,7 +27,7 @@ angular.module('ommiApp')
     $scope.formatDate =  function(date) {
       var formatedDate = new Date(date);
       var day = formatedDate.getDate();
-      var month = formatedDate.getMonth();
+      var month = formatedDate.getMonth()+1;
 
       return  (day<10?'0'+day:day) +'-'+ (month<10?'0'+month:month) +'-'+ formatedDate.getFullYear();
     };
