@@ -44,3 +44,7 @@ angular
         redirectTo: '/'
       });
   });
+
+function dateFormat() {
+  return "dd MMM yyyy"
+}
