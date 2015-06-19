@@ -129,6 +129,18 @@ h2 {
 }
 
 
+/* Select box */
+select {
+  background-color: #efefef;
+  border: 0;
+  height: 30px;
+  width: 250px;
+  max-width: 100%;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+
 /* Highlight */
 .highlightedText {
   background: #ffcd00;
