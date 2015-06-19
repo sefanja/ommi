@@ -2,7 +2,7 @@
   <div class="col-md-3 col-sm-4">
     <h2>{{address.phone.title}}</h2>
   </div>
-  <div class="col-md-9 col-sm-8" >
+  <div class="col-md-9 col-sm-8">
     <p ng-repeat="tel in address.phone.numbers" class="nomargin">
       <span ng-show="isMobile"><a hef="{{createMobilePhoneNr(tel.number)}}">{{tel.number}}</a></span>
       <span ng-hide="isMobile">{{tel.number}}</span>
@@ -11,7 +11,7 @@
   </div>
 </div>
 
-<div class="row newline"  ng-repeat="address in address.address">
+<div class="row newline" ng-repeat="address in address.address">
   <div class="col-md-3 col-sm-4">
     <h2>{{address.type}}</h2>
   </div>

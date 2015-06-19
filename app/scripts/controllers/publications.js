@@ -15,7 +15,6 @@ angular.module('ommiApp')
       $scope.publications = data;
       $scope.years = _.unique(_.pluck(data.items, 'year'));
       $scope.types = _.unique(_.pluck(data.items, 'type'));
-
     });
 
     $scope.pubType = '';
