@@ -45,6 +45,3 @@ angular
       });
   });
 
-function dateFormat() {
-  return "dd MMM yyyy"
-}

@@ -18,7 +18,7 @@ angular.module('ommiApp')
 
     });
 
-    $scope.pubType = "";
+    $scope.pubType = '';
 
     $scope.openPubDetailModal = function (publication) {
       $modal.open({
@@ -42,9 +42,9 @@ angular.module('ommiApp')
 
     $scope.pubTypeSelector = function() {
 
-      if ($scope.pubType && $scope.pubType != $scope.publications.allTypesLabel) {
+      if ($scope.pubType && $scope.publications && $scope.pubType !== $scope.publications.allTypesLabel) {
         return $scope.pubType;
       }
-      return "";
-    }
+      return '';
+    };
   });
