@@ -1,8 +1,8 @@
 <div class="row newline" ng-show="address.phone">
-  <div class="col-md-2 col-sm-3">
+  <div class="col-md-3 col-sm-4">
     <h2>{{address.phone.title}}</h2>
   </div>
-  <div class="col-md-10 col-sm-9" >
+  <div class="col-md-9 col-sm-8" >
     <p ng-repeat="tel in address.phone.numbers" class="nomargin">
       <span ng-show="isMobile"><a hef="{{createMobilePhoneNr(tel.number)}}">{{tel.number}}</a></span>
       <span ng-hide="isMobile">{{tel.number}}</span>
@@ -12,10 +12,10 @@
 </div>
 
 <div class="row newline"  ng-repeat="address in address.address">
-  <div class="col-md-2 col-sm-3">
+  <div class="col-md-3 col-sm-4">
     <h2>{{address.type}}</h2>
   </div>
-  <div class="col-md-10 col-sm-9" >
+  <div class="col-md-9 col-sm-8" >
     <p ng-show="address.building">{{address.building}}</p>
     <p ng-show="address.room" class="nomargin">{{address.roomlabel}} {{address.room}}</p>
     <p ng-show="address.street" class="nomargin">{{address.street}}</p>

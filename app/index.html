@@ -26,7 +26,7 @@
 <!-- Add your site or application content here -->
 <div class="page" ng-controller="RootCtrl">
   <div class="brandbar">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <div class="col-sm-6">
           <a href="http://www.uu.nl" title="Home Page Utrecht University">
@@ -49,7 +49,7 @@
   </div>
 
   <div class="title">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <div class="col-md-12">
           <h1>
@@ -64,7 +64,7 @@
   </div>
 
   <div class="divMenu">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <div class="col-md-12">
           <ul>
@@ -77,74 +77,79 @@
     </div>
   </div>
 
-
-  <div id="easy-breadcrumb-easy-breadcrumb" class="container-fluid">
-    <div class="row">
-      <div class="col-md-12 content">
-        <div class="easy-breadcrumb">
-          <a href="/" class="easy-breadcrumb_segment easy-breadcrumb_segment-front">UU.nl</a>
-          <span class="easy-breadcrumb_segment-separator"> / </span>
-          <a href="#" class="easy-breadcrumb_segment easy-breadcrumb_segment-1">Faculty of Science</a>
-          <span class="easy-breadcrumb_segment-separator"> / </span>
-          <a href="#" class="easy-breadcrumb_segment easy-breadcrumb_segment-2">Staff</a>
-          <span class="easy-breadcrumb_segment-separator"> / </span>
-          <span class="easy-breadcrumb_segment easy-breadcrumb_segment-title">Egon L. van den Broek</span>
+  <div id="easy-breadcrumb-easy-breadcrumb" class="container-fluid hide-sm hide-xs">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 content">
+          <div class="easy-breadcrumb">
+            <a href="/" class="easy-breadcrumb_segment easy-breadcrumb_segment-front">UU.nl</a>
+            <span class="easy-breadcrumb_segment-separator"> / </span>
+            <a href="#" class="easy-breadcrumb_segment easy-breadcrumb_segment-1">Faculty of Science</a>
+            <span class="easy-breadcrumb_segment-separator"> / </span>
+            <a href="#" class="easy-breadcrumb_segment easy-breadcrumb_segment-2">Staff</a>
+            <span class="easy-breadcrumb_segment-separator"> / </span>
+            <span class="easy-breadcrumb_segment easy-breadcrumb_segment-title">Egon L. van den Broek</span>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container-fluid">
-    <div class="row page-header">
-      <div class="col-md-2 col-sm-3">
-        <img src="images/egon.jpg" class="profile-picture"/>
-      </div>
-      <div class="col-md-10 col-sm-9">
-        <h1>Egon L. van den Broek</h1>
-
-        <p>e.l.vandenbroek<span class="domain">uu.nl</span><br/>
-          +31 30 253 5966</p>
-
-        <p><a href="http://linkedin.com" alt="LinkedIn" target="_blank"><img src="images/linkedin.png"/></a><a
-          href="http://youtube.com" alt="YouTube" target="_blank"><img src="images/youtube.png"/></a><a
-          href="http://twitter.com" alt="Twitter" target="_blank"><img src="images/twitter.png"/></a></p>
-        <!--
-        <div class="link">
-          <a href="http://www.uu.nl/medewerkers/Zoek" target="_blank">Address</a>
+  <div class="container-fluid page-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 col-sm-3">
+          <img src="images/egon.jpg" class="profile-picture"/>
         </div>
-        -->
+        <div class="col-md-10 col-sm-9">
+          <h1>Egon L. van den Broek</h1>
+
+          <p>e.l.vandenbroek<span class="domain">uu.nl</span><br/>
+            +31 30 253 5966</p>
+
+          <p><a href="http://linkedin.com" alt="LinkedIn" target="_blank"><img src="images/linkedin.png"/></a><a
+            href="http://youtube.com" alt="YouTube" target="_blank"><img src="images/youtube.png"/></a><a
+            href="http://twitter.com" alt="Twitter" target="_blank"><img src="images/twitter.png"/></a></p>
+          <!--
+          <div class="link">
+            <a href="http://www.uu.nl/medewerkers/Zoek" target="_blank">Address</a>
+          </div>
+          -->
+        </div>
       </div>
     </div>
   </div>
 
   <div class="navbar navbar-default profile-tabs" role="navigation">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-              data-target="#js-navbar-collapse" ng-init="isCollapsed = true" ng-click="isCollapsed = !isCollapsed">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#js-navbar-collapse" ng-init="isCollapsed = true" ng-click="isCollapsed = !isCollapsed">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
 
-    <div class="collapse navbar-collapse" id="js-navbar-collapse" collapse="isCollapsed">
-      <ul class="nav navbar-nav">
-        <li ng-class="{active: isActive('/')}"><a ng-href="#/">Contact</a></li>
-        <li ng-class="{active: isActive('/summary')}"><a ng-href="#/summary">Summary</a></li>
-        <li ng-class="{active: isActive('/publications')}"><a ng-href="#/publications">Publications</a></li>
-        <li ng-class="{active: isActive('/news')}"><a ng-href="#/news">News</a></li>
-        <li ng-class="{active: isActive('/cv')}"><a ng-href="#/cv">CV</a></li>
-      </ul>
+      <div class="collapse navbar-collapse" id="js-navbar-collapse" collapse="isCollapsed">
+        <ul class="nav navbar-nav">
+          <li ng-class="{active: isActive('/')}"><a ng-href="#/">Contact</a></li>
+          <li ng-class="{active: isActive('/summary')}"><a ng-href="#/summary">Summary</a></li>
+          <li ng-class="{active: isActive('/publications')}"><a ng-href="#/publications">Publications</a></li>
+          <li ng-class="{active: isActive('/news')}"><a ng-href="#/news">News</a></li>
+          <li ng-class="{active: isActive('/cv')}"><a ng-href="#/cv">CV</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 
-  <div class="container-fluid profile-content">
+  <div class="container profile-content">
     <div ng-view=""></div>
   </div>
 
   <footer>
-    <div class="container-fluid">
+    <div class="container">
       <div class="footer-inner">
         <div class="footer_logo">
           <img src="images/logo_footer.svg" alt="University Utrecht">
@@ -199,15 +204,20 @@
 
 <script>
   // Quick and dirty solution for auto-collapsing the navbar on click.
-  jQuery(function() {
-    $('.nav a').on('click', function(){
+  jQuery(function () {
+    $('.nav a').on('click', function () {
       $(".navbar-toggle").click();
     });
   });
 
   function isMobile() {
-    try{ document.createEvent("TouchEvent"); return true; }
-    catch(e){ return false; }
+    try {
+      document.createEvent("TouchEvent");
+      return true;
+    }
+    catch (e) {
+      return false;
+    }
   }
 </script>
 

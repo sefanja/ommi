@@ -36,10 +36,6 @@ html, body {
   padding-bottom: 6px;
   background-color: rgba(0, 0, 0, 0.5);
   color: #efefef;
-  /* Hide on small devices */
-  @media (max-width: $screen-sm-min) {
-    display: none;
-  }
   a {
     color: #efefef;
   }
@@ -112,10 +108,12 @@ h2 {
     text-decoration: underline;
   }
   .reference {
-    font-size: 13px;
+    font-size: 14px;
+    font-style: italic;
   }
   .pubtype {
-    font-style: italic;
+    //text-align: right;
+    font-size: 14px;
   }
 }
 
@@ -139,8 +137,9 @@ h2 {
 
 /* Modal */
 body .modal-dialog {
-  @media (min-width: $screen-md-min) {
+  @media (min-width: $screen-sm-min) {
     width: 90%;
+    max-width: $screen-lg-min;
   }
 }
 
@@ -176,10 +175,6 @@ footer {
   img {
     height: 73px;
   }
-}
-
-.row p {
-  max-width: 60rem;
 }
 
 .sortorder:after {

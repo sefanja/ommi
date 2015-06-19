@@ -1,15 +1,15 @@
 <div class="row heading">
-  <div class="col-md-2 col-sm-2">
+  <div class="col-sm-2">
     <a href="" ng-click="order('date')">Date</a>
     <span class="sortorder" ng-show="predicate === 'date'" ng-class="{reverse:reverse}"></span>
   </div>
 </div>
 <div class="row newline" ng-repeat="newsitem in newsitems | orderBy:predicate:reverse">
-  <div class="col-md-2 col-sm-2">
+  <div class="col-sm-2">
     <h2>{{formatDate(newsitem.date)}}</h2>
     <span>{{newsitem.time}}</span>
   </div>
-  <div class="col-md-10 col-sm-10">
+  <div class="col-sm-10">
     <h2 ng-show="newsitem.title" ng-bind-html="renderHtml(newsitem.title)"></h2>
     <p  ng-bind-html="renderHtml(newsitem.item)"></p>
   </div>
