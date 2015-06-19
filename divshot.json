@@ -1,6 +1,6 @@
 {
   "name": "ommi",
-  "root": "app",
+  "root": "dist",
   "clean_urls": true,
   "error_page": "error.html"
 }
