@@ -3,6 +3,19 @@
     "date": "2015-06-17",
     "label" : "Last modified"
   },
-  "title": "Summary",
-  "summaryText": "Dr. Egon L. van den Broek is assistant professor interaction technology at the University of Utrecht. He also works as a consultant for various institutes and organizations like the European Commission, TNO, Philips and the United Nations. He is co-founder and Chief Scientific Officer (CSO) of Information eXperience BV Van den Broek studied artificial intelligence at the University of Nijmegen and received his doctorate there in 2005 on a new generation of search engines for the Internet. In 2011 he was promoted a second time, this time on empathic technology at the University of Twente. His current research focuses on various aspects of the Internet of Things, the next IT revolution. He works on conscious or unconscious, invisible intuitive interaction with ICT. For this, ICT is needed that can adapt to a context, and intelligent, empathetic and (semi-) autonomous."
+  "items" : [
+    {
+      "title": "Current",
+      "summaryText": "Dr. Egon L. van den Broek is assistant professor interaction technology at the University of Utrecht. He also works as a consultant for various institutes and organizations like the European Commission, TNO, Philips and the United Nations. He is co-founder and Chief Scientific Officer (CSO) of Information eXperience BV."
+    },
+    {
+      "title": "Study",
+      "summaryText": "Van den Broek studied artificial intelligence at the University of Nijmegen and received his doctorate there in 2005 on a new generation of search engines for the Internet. In 2011 he was promoted a second time, this time on empathic technology at the University of Twente."
+    },
+    {
+      "title": "Research",
+      "summaryText": "His current research focuses on various aspects of the Internet of Things, the next IT revolution. He works on conscious or unconscious, invisible intuitive interaction with ICT. For this, ICT is needed that can adapt to a context, and intelligent, empathetic and (semi-) autonomous."
+    }
+
+    ]
 }

@@ -1,5 +1,5 @@
 <div class="modal-header">
-  <button type="button" class="close" aria-hidden="true" ng-click="$dismiss()">&times;</button>
+  <button type="button" class="close" aria-hidden="true" data-ng-click="$dismiss()">&times;</button>
   <h3 class="modal-title">Publication details</h3>
 </div>
 <div class="modal-body" style="overflow:auto">
@@ -7,20 +7,20 @@
     <div class="row">
       <div class="col-md-2"></div>
       <div class="col-md-10">
-        <div ng-if="pub.urls.doi" class="publink">
-          <a ng-href="{{pub.urls.doi}}" target="_blank"><img src="images/doi.png"><br>DOI</a>
+        <div data-ng-if="pub.urls.doi" class="publink">
+          <a data-ng-href="{{pub.urls.doi}}" target="_blank"><img src="images/doi.png"><br>DOI</a>
         </div>
         <div class="publink">
-          <a ng-href="http://eprints.ewi.utwente.nl/{{pub.id}}" target="_blank"><img src="images/eprints.png"><br>EPrints</a>
+          <a data-ng-href="http://eprints.ewi.utwente.nl/{{pub.id}}" target="_blank"><img src="images/eprints.png"><br>EPrints</a>
         </div>
-        <div ng-if="pub.urls.pdf" class="publink">
-          <a ng-href="{{pub.urls.pdf}}" target="_blank"><img src="images/pdf.png"><br>PDF</a>
-        </div>
-        <div class="publink">
-          <a ng-href="http://eprints.eemcs.utwente.nl/perl/export/{{pub.id}}/bibtex/eemcs-eprint-{{pub.id}}.txt" target="_blank"><img src="images/bibtex.png"><br>BibTeX</a>
+        <div data-ng-if="pub.urls.pdf" class="publink">
+          <a data-ng-href="{{pub.urls.pdf}}" target="_blank"><img src="images/pdf.png"><br>PDF</a>
         </div>
         <div class="publink">
-          <a ng-href="http://eprints.eemcs.utwente.nl/perl/export/{{pub.id}}/xml/eemcs-eprint-{{pub.id}}.xml" target="_blank"><img src="images/xml.png"><br>XML</a>
+          <a data-ng-href="http://eprints.eemcs.utwente.nl/perl/export/{{pub.id}}/bibtex/eemcs-eprint-{{pub.id}}.txt" target="_blank"><img src="images/bibtex.png"><br>BibTeX</a>
+        </div>
+        <div class="publink">
+          <a data-ng-href="http://eprints.eemcs.utwente.nl/perl/export/{{pub.id}}/xml/eemcs-eprint-{{pub.id}}.xml" target="_blank"><img src="images/xml.png"><br>XML</a>
         </div>
         <br><br>
       </div>
@@ -33,7 +33,7 @@
         <p>{{pub.title}}</p>
       </div>
     </div>
-    <div class="row" ng-if="pub.subtitle">
+    <div class="row" data-ng-if="pub.subtitle">
       <div class="col-md-2">
         <h2 class="attr">Subtitle</h2>
       </div>
@@ -57,7 +57,7 @@
         <p>{{pub.type}}</p>
       </div>
     </div>
-    <div class="row" ng-if="pub.supervisors">
+    <div class="row" data-ng-if="pub.supervisors">
       <div class="col-md-2">
         <h2 class="attr">Supervisors</h2>
       </div>
@@ -65,7 +65,7 @@
         <p>{{pub.supervisors}}</p>
       </div>
     </div>
-    <div class="row" ng-if="pub.assistantsupervisors">
+    <div class="row" data-ng-if="pub.assistantsupervisors">
       <div class="col-md-2">
         <h2 class="attr">Assistant supervisors</h2>
       </div>
@@ -89,7 +89,7 @@
         <p>{{pub.researchprogram}}</p>
       </div>
     </div>
-    <div class="row" ng-if="pub.researchproject">
+    <div class="row" data-ng-if="pub.researchproject">
       <div class="col-md-2">
         <h2 class="attr">Research project</h2>
       </div>
@@ -97,7 +97,7 @@
         <p>{{pub.researchproject}}</p>
       </div>
     </div>
-    <div class="row" ng-if="pub.additionalinfo">
+    <div class="row" data-ng-if="pub.additionalinfo">
       <div class="col-md-2">
         <h2 class="attr">Additional information</h2>
       </div>
@@ -121,7 +121,7 @@
         <p>{{pub.deposited | date}}</p>
       </div>
     </div>
-    <div class="row" ng-if="pub.refereed = 'Yes'">
+    <div class="row" data-ng-if="pub.refereed = 'Yes'">
       <div class="col-md-2">
         <h2 class="attr">Refereed</h2>
       </div>
@@ -129,7 +129,7 @@
         <p>{{pub.refereed}}</p>
       </div>
     </div>
-    <div class="row" ng-if="pub.isi">
+    <div class="row" data-ng-if="pub.isi">
       <div class="col-md-2">
         <h2 class="attr">ISI impact factor</h2>
       </div>
@@ -140,5 +140,5 @@
   </div>
 </div>
 <div class="modal-footer">
-  <button class="btn btn-primary" ng-click="$close()">Close</button>
+  <button class="btn btn-primary" data-ng-click="$close()">Close</button>
 </div>

@@ -1,20 +1,33 @@
-<div class="row heading">
-  <div class="col-md-2 col-sm-3">
-    <a href="" ng-click="order('year')">{{cvs.orderLabel}}</a>
-    <span class="sortorder" ng-show="predicate === 'year'" ng-class="{reverse:reverse}"></span>
-  </div>
-  <div class="col-md-10 col-sm-9">
-    &nbsp;
-  </div>
-</div>
-
-<div class="row" ng-repeat="cv in cvs.items | orderBy:predicate:reverse">
-  <div class="col-md-2 col-sm-3">
+<div class="row" data-ng-repeat="cv in cvs.items ">
+  <div class="col-md-2 col-sm-3 datetime">
     <h2>{{cv.year}}</h2>
   </div>
   <div class="col-md-10 col-sm-9">
-    <p  ng-bind-html="renderHtml(cv.abstract)"></p>
+    <p  data-ng-bind-html="renderHtml(cv.abstract)"></p>
   </div>
 </div>
 
+<div class="row">&nbsp;</div>
+
+<div class="row" >
+  <div class="col-md-2 col-sm-3 datetime">
+    &nbsp;
+  </div>
+  <div class="col-md-10 col-sm-9">
+    <h2>{{cvs.functionsLabel}}</h2>
+  </div>
+</div>
+
+
+<div class="row" data-ng-repeat="function in cvs.functions ">
+
+  <div class="col-md-2 col-sm-3 datetime">
+    <h2>{{function.title}}</h2>
+  </div>
+  <div class="col-md-10 col-sm-9">
+    <span  data-ng-repeat="func in function.function">
+      <p  data-ng-bind-html="renderHtml(func)"></p>
+    </span>
+  </div>
+</div>
 <div class="lastmodified">{{cvs.lastmodified.label}} {{cvs.lastmodified.date | date:'dd MMM yyyy'}}</div>

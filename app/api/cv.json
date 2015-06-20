@@ -3,25 +3,43 @@
     "date": "2015-04-30",
     "label" : "Last modified"
   },
-  "orderLabel" : "Year",
 
   "items": [
-{
-"year": "2013",
-"abstract": "Short program Cyber Security and Warfare, Delft University of Technology, The Netherlands."
-},
-{
-"year": "2011",
-"abstract": "(2nd) PhD in Electrical Engineering, Mathematics, and Computer Science, University of Twente, The Netherlands. Topic: <a href=\"http://doc.utwente.nl/78025/\">Affective Signal Processing (ASP): Unraveling the mystery of emotions.</a>"
-},
-{
-"year": "2005",
-"abstract": "(1st) PhD in Social Sciences, Radboud University Nijmegen, The Netherlands. Topic: <a href=\"http://theses.eurasip.org/theses/254/human-centered-content-based-image-retrieval/\">Human-Centered Content-Based Image Retrieval.</a>"
-},
-{
-"year": "2001",
-"abstract": "MSc in Artificial Intelligence, Radboud University Nijmegen, The Netherlands."
-}
-]
+    {
+      "year": "2013",
+      "abstract": "Short program Cyber Security and Warfare, Delft University of Technology, The Netherlands."
+    },
+    {
+      "year": "2011",
+      "abstract": "(2nd) PhD in Electrical Engineering, Mathematics, and Computer Science, University of Twente, The Netherlands. Topic: <a href=\"http://doc.utwente.nl/78025/\">Affective Signal Processing (ASP): Unraveling the mystery of emotions.</a>"
+    },
+    {
+      "year": "2005",
+      "abstract": "(1st) PhD in Social Sciences, Radboud University Nijmegen, The Netherlands. Topic: <a href=\"http://theses.eurasip.org/theses/254/human-centered-content-based-image-retrieval/\">Human-Centered Content-Based Image Retrieval.</a>"
+    },
+    {
+      "year": "2001",
+      "abstract": "MSc in Artificial Intelligence, Radboud University Nijmegen, The Netherlands."
+    }
+  ],
+
+  "functionsLabel" : "Other positions",
+  "functions" : [
+    {
+      "title":"Present",
+      "function":[
+        "Scientific advisor, <a href=\"http://www.information-experience.com\">IX B.V. (Information eXperience B.V.)</a>, The Netherlands.",
+        "Scientific Advisory Board of the <a href=\"http://www.i3b.org\">Foundation ICT for Brain, Body & Behavior (short: i3B Foundation)</a>, The Netherland"
+      ]
+
+    },
+    {
+      "title":"Past",
+      "function":[
+        "Assistant project officer, rapporteur, and expert for the several ''directorates'', Information Society and Media Directorate-General (FP7 and H2020), European Commission.",
+        "People Individual Marie Curie Actions (FP7-PEOPLE-2013) IEF, IIF, and IOF on Mathematics & Engineering (MATENG) panel, European Commission."
+      ]
+    }
+  ]
 }
 

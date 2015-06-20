@@ -1,10 +1,10 @@
-<div class="row newline newsrow" ng-repeat="newsitem in newsitems.items">
+<div class="row newline newsrow" data-ng-repeat="newsitem in newsitems.items">
   <div class="col-lg-2 col-sm-3 datetime">
     <h2>{{newsitem.date | date:'dd MMM yyyy'}} {{newsitem.time}}</h2>
   </div>
   <div class="col-lg-10 col-sm-9">
-    <h2 ng-show="newsitem.title" ng-bind-html="renderHtml(newsitem.title)"></h2>
-    <p  ng-bind-html="renderHtml(newsitem.item)"></p>
+    <h2 data-ng-show="newsitem.title" data-ng-bind-html="renderHtml(newsitem.title)"></h2>
+    <p  data-ng-bind-html="renderHtml(newsitem.item)"></p>
   </div>
 </div>
 

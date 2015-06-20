@@ -2,7 +2,7 @@
 <html class="no-js">
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Staff Science UU</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -17,14 +17,14 @@
   <!-- endbuild -->
   <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 </head>
-<body ng-app="ommiApp">
+<body data-ng-app="ommiApp">
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
   your browser</a> to improve your experience.</p>
 <![endif]-->
 
 <!-- Add your site or application content here -->
-<div class="page" ng-controller="RootCtrl">
+<div class="page" data-ng-controller="RootCtrl">
   <div class="brandbar">
     <div class="container">
       <div class="row">
@@ -52,12 +52,12 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1>
+          <div class="staff">
             <div id="PanelBanner" class="banner-en">
               <a id="btnHeader" href="http://www.uu.nl/staff/Search"><span id="lblHeadertekst">Staff</span>&nbsp;<span
                 id="lblFaculteitNaamHeader">Science</span></a>
             </div>
-          </h1>
+          </div>
         </div>
       </div>
     </div>
@@ -88,7 +88,7 @@
             <span class="easy-breadcrumb_segment-separator"> / </span>
             <a href="http://www.uu.nl/staff/Search" class="easy-breadcrumb_segment easy-breadcrumb_segment-2">Staff</a>
             <span class="easy-breadcrumb_segment-separator"> / </span>
-            <span class="easy-breadcrumb_segment easy-breadcrumb_segment-title">Egon L. van den Broek</span>
+            <span class="easy-breadcrumb_segment easy-breadcrumb_segment-title">{{root.firstname}} {{root.lastname}}</span>
           </div>
         </div>
       </div>
@@ -99,17 +99,17 @@
     <div class="container">
       <div class="row">
         <div class="col-md-2 col-sm-3">
-          <img src="images/egon.jpg" class="profile-picture"/>
+          <img  src="#" data-ng-src="{{root.image}}" alt="{{root.image.substring(0,root.image.indexOf('.'))}}" class="profile-picture" data-ng-show="root.image"/>
         </div>
         <div class="col-md-10 col-sm-9">
-          <h1>Egon L. van den Broek</h1>
+          <h1>{{root.firstname}} {{root.lastname}}</h1>
 
-          <p>e.l.vandenbroek<span class="domain">uu.nl</span><br/>
-            +31 30 253 5966</p>
+          <p>{{root.email.substring(0,root.email.indexOf("@"))}}<span class="domain">{{root.email.substring(root.email.indexOf("@")+1)}}</span><br/>
+            {{root.phonenr}}</p>
 
-          <p><a href="http://linkedin.com" alt="LinkedIn" target="_blank"><img src="images/linkedin.png"/></a><a
-            href="http://youtube.com" alt="YouTube" target="_blank"><img src="images/youtube.png"/></a><a
-            href="http://twitter.com" alt="Twitter" target="_blank"><img src="images/twitter.png"/></a></p>
+          <p><a href="http://linkedin.com"  target="_blank"><img alt="LinkedIn" src="images/linkedin.png" data-ng-show="root.linkedin"/></a><a
+            href="http://youtube.com"  target="_blank"><img alt="YouTube" src="images/youtube.png" data-ng-show="root.youtube"/></a><a
+            href="http://twitter.com" title="Twitter" target="_blank"><img alt="twitter" src="images/twitter.png" data-ng-show="root.twitter"/></a></p>
           <!--
           <div class="link">
             <a href="http://www.uu.nl/medewerkers/Zoek" target="_blank">Address</a>
@@ -124,7 +124,7 @@
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                data-target="#js-navbar-collapse" ng-init="isCollapsed = true" ng-click="isCollapsed = !isCollapsed">
+                data-target="#js-navbar-collapse" data-ng-init="isCollapsed = true" data-ng-click="isCollapsed = !isCollapsed">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -132,20 +132,20 @@
         </button>
       </div>
 
-      <div class="collapse navbar-collapse" id="js-navbar-collapse" collapse="isCollapsed">
+      <div class="collapse navbar-collapse" id="js-navbar-collapse" data-collapse="isCollapsed">
         <ul class="nav navbar-nav">
-          <li ng-class="{active: isActive('/')}"><a ng-href="#/">Contact</a></li>
-          <li ng-class="{active: isActive('/summary')}"><a ng-href="#/summary">Summary</a></li>
-          <li ng-class="{active: isActive('/publications')}"><a ng-href="#/publications">Publications</a></li>
-          <li ng-class="{active: isActive('/news')}"><a ng-href="#/news">News</a></li>
-          <li ng-class="{active: isActive('/cv')}"><a ng-href="#/cv">CV</a></li>
+          <li data-ng-class="{active: isActive('/')}"><a data-ng-href="#/">Contact</a></li>
+          <li data-ng-class="{active: isActive('/summary')}"><a data-ng-href="#/summary">Summary</a></li>
+          <li data-ng-class="{active: isActive('/publications')}"><a data-ng-href="#/publications">Publications</a></li>
+          <li data-ng-class="{active: isActive('/news')}"><a data-ng-href="#/news">News</a></li>
+          <li data-ng-class="{active: isActive('/cv')}"><a data-ng-href="#/cv">CV</a></li>
         </ul>
       </div>
     </div>
   </div>
 
   <div class="container profile-content">
-    <div ng-view=""></div>
+    <div data-ng-view=""></div>
   </div>
 
   <footer>
