@@ -3,7 +3,7 @@
     <input ng-model="search.$" placeholder="{{publications.searchLabel}}" class="search">
     <select ng-model="search.type" class="hidden-xs">
       <option value="" selected="selected">{{publications.allTypesLabel}}</option>
-      <option ng-repeat="type in types">{{type}}</option>
+      <option ng-repeat="type in types" value="{{type}}">{{type}}</option>
     </select>
   </div>
 </div>
