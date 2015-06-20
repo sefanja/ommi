@@ -1,8 +1,8 @@
 <div class="row">
   <div class="col-sm-11 col-sm-offset-1">
-    <input ng-model="searchText" placeholder="{{publications.searchLabel}}" class="search">
-    <select ng-model="pubType" class="hidden-xs">
-      <option selected="selected">{{publications.allTypesLabel}}</option>
+    <input ng-model="search.$" placeholder="{{publications.searchLabel}}" class="search">
+    <select ng-model="search.type" class="hidden-xs">
+      <option value="" selected="selected">{{publications.allTypesLabel}}</option>
       <option ng-repeat="type in types">{{type}}</option>
     </select>
   </div>
@@ -10,32 +10,35 @@
 
 <br>
 
-<div ng-repeat="year in years | orderBy:'-'">
+<div class="publications" ng-repeat="year in years | orderBy:'-'">
   <div
-    ng-repeat="pub in publications.items | filter: {year: year} | filter: {type: pubTypeSelector()} | filter:searchText | orderBy:'-deposited'">
+    ng-repeat="pub in publications.items | filter: {year: year} | filter:search | orderBy:'-deposited'">
+    <div ng-if="results.length == 0" class="row">
+      <p>No results.</p>
+    </div>
     <div class="row">
       <div class="col-md-1 col-sm-1">
         <h2 ng-if="$first">{{year}}</h2>
       </div>
       <div class="col-md-8 col-sm-9">
         <p><a href="" ng-click="openPubDetailModal(pub)"><span
-          ng-bind-html="highlight(pub.title, searchText)"></span><span
+          ng-bind-html="highlight(pub.title, search.$)"></span><span
           ng-if="pub.subtitle">:</span>
-          <span ng-bind-html="highlight(pub.subtitle, searchText)"></span></a></p>
+          <span ng-bind-html="highlight(pub.subtitle, search.$)"></span></a></p>
       </div>
     </div>
     <div class="row">
       <div class="col-md-8 col-md-offset-1 col-sm-9 col-sm-offset-1">
-        <p ng-if="!searchText">{{pub.abstract | limitTo:250}} . . .</p>
+        <p ng-if="!search.$">{{pub.abstract | limitTo:250}} . . .</p>
 
-        <p ng-if="searchText" ng-bind-html="highlight(pub.abstract, searchText)"></p>
+        <p ng-if="search.$" ng-bind-html="highlight(pub.abstract, search.$)"></p>
 
-        <p ng-if="searchText">Keywords: <span ng-bind-html="highlight(pub.keywords, searchText)"></span></p>
+        <p ng-if="search.$">Keywords: <span ng-bind-html="highlight(pub.keywords, search.$)"></span></p>
 
-        <p class="reference" ng-bind-html="highlight(pub.reference, searchText)"></p>
+        <p class="reference" ng-bind-html="highlight(pub.reference, search.$)"></p>
       </div>
       <div class="col-md-2 col-md-offset-1 col-sm-2">
-        <p class="pubtype" ng-bind-html="highlight(pub.type, searchText)"></p>
+        <p class="pubtype" ng-bind-html="highlight(pub.type, search.$)"></p>
       </div>
     </div>
     <div class="row">&nbsp;</div>
