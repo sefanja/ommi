@@ -141,6 +141,19 @@ p + h2 {
       border-top: 1px solid #e7e7e7;
     }
   }
+  .summaryrow {
+    h2 {
+      display: inline-block;
+    }
+    .glyphicon {
+      display: none;
+      margin-left: 10px;
+      color: #787878;
+    }
+  }
+  .summaryrow:hover .glyphicon {
+    display: inline-block;
+  }
 }
 
 
