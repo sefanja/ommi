@@ -126,12 +126,19 @@ p + h2 {
     //text-align: right;
     font-size: 16px;
   }
-  .datetime {
-    color: #787878;
+  .newsrow {
+    @media (max-width: $screen-sm-min) {
+      .datetime {
+        color: #787878;
+      }
+    }
+  }
+  .newsrow:not(:first-child) {
     @media (max-width: $screen-sm-min) {
       border-top: 1px solid #e7e7e7;
     }
   }
+
 }
 
 

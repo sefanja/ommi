@@ -17,13 +17,6 @@ angular.module('ommiApp')
       return $sce.trustAsHtml(htmlCode);
     };
 
-    $scope.predicate = 'date';
-    $scope.reverse = true;
-    $scope.order = function(predicate) {
-      $scope.reverse = ($scope.predicate === predicate) ? !$scope.reverse : false;
-      $scope.predicate = predicate;
-    };
-
     $scope.formatDate =  function(date) {
       var formatedDate = new Date(date);
       var day = formatedDate.getDate();
