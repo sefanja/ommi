@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-sm-11 col-sm-offset-1">
+  <div class="col-sm-11 col-sm-offset-0">
     <input data-ng-model="search.$" placeholder="{{publications.searchLabel}}" class="search">
     <select data-ng-model="search.type" class="hidden-xs">
       <option value="" selected="selected">{{publications.allTypesLabel}}</option>
@@ -8,42 +8,44 @@
   </div>
 </div>
 
-<br>
+<br><br class="hidden-xs">
 
-<div class="publications" data-ng-repeat="year in years | orderBy:'-'">
-  <div
-    data-ng-repeat="pub in publications.items | filter: {year: year} | filter:search | orderBy:'-deposited'">
-    <div data-ng-if="results.length == 0" class="row">
-      <p>No results.</p>
+<div class="publications"
+     data-ng-repeat="pub in publications.items | filter:search | orderBy:'-deposited' as results">
+  <div class="row">
+    <div class="col-md-1 col-sm-1">
+      <h2 data-ng-if="pub.year != results[$index-1].year">{{pub.year}}</h2>
     </div>
-    <div class="row">
-      <div class="col-md-1 col-sm-1">
-        <h2 data-ng-if="$first">{{year}}</h2>
-      </div>
-      <div class="col-md-8 col-sm-9">
-        <p><a href="" data-ng-click="openPubDetailModal(pub)"><span
-          data-ng-bind-html="highlight(pub.title, search.$)"></span><span
-          data-ng-if="pub.subtitle">:</span>
-          <span data-ng-bind-html="highlight(pub.subtitle, search.$)"></span></a></p>
-      </div>
+    <div class="col-md-8 col-sm-9">
+      <p><a href="" data-ng-click="openPubDetailModal(pub)"><span
+        data-ng-bind-html="highlight(pub.title, search.$)"></span><span
+        data-ng-if="pub.subtitle">:</span>
+        <span data-ng-bind-html="highlight(pub.subtitle, search.$)"></span></a></p>
     </div>
-    <div class="row">
-      <div class="col-md-8 col-md-offset-1 col-sm-9 col-sm-offset-1">
-        <p data-ng-if="!search.$">{{pub.abstract | limitTo:250}} . . .</p>
+  </div>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-1 col-sm-9 col-sm-offset-1">
+      <p data-ng-if="!search.$">{{pub.abstract | limitTo:250}} . . .</p>
 
-        <p data-ng-if="search.$" data-ng-bind-html="highlight(pub.abstract, search.$)"></p>
+      <p data-ng-if="search.$" data-ng-bind-html="highlight(pub.abstract, search.$)"></p>
 
-        <p data-ng-if="search.$">Keywords: <span data-ng-bind-html="highlight(pub.keywords, search.$)"></span></p>
+      <p data-ng-if="search.$">Keywords: <span data-ng-bind-html="highlight(pub.keywords, search.$)"></span></p>
 
-        <p class="reference" data-ng-bind-html="highlight(pub.reference, search.$)"></p>
-      </div>
-      <div class="col-md-2 col-md-offset-1 col-sm-2">
-        <p class="pubtype" data-ng-bind-html="highlight(pub.type, search.$)"></p>
-      </div>
+      <p class="reference" data-ng-bind-html="highlight(pub.reference, search.$)"></p>
     </div>
-    <div class="row">&nbsp;</div>
+    <div class="col-md-2 col-md-offset-1 col-sm-2">
+      <p class="pubtype" data-ng-bind-html="highlight(pub.type, search.$)"></p>
+    </div>
+  </div>
+  <div class="row">&nbsp;</div>
+</div>
+
+<div data-ng-if="results.length == 0" class="row">
+  <div class="col-md-12">
+    No results.
   </div>
 </div>
+
 
 <div class="lastmodified">{{publications.lastmodified.label}} {{publications.lastmodified.date | date:'dd MMM yyyy'}}
 </div>

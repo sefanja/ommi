@@ -38,7 +38,9 @@ angular.module('ommiApp')
       if (!search) {
         return $sce.trustAsHtml(text);
       }
-      return $sce.trustAsHtml(text.replace(new RegExp(search, 'gi'), '<span class="highlightedText">$&</span>'));
+      if (text) {
+        return $sce.trustAsHtml(text.replace(new RegExp(search, 'gi'), '<span class="highlightedText">$&</span>'));
+      }
     };
 
     $scope.pubTypeSelector = function() {
