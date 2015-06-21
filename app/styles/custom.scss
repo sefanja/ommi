@@ -23,9 +23,10 @@ html, body {
 /* Logo */
 #ImageLogo {
   height: 48px;
-  margin-top: 4px;
+  margin-top: 8px;
   @media (max-width: $screen-sm-min) {
     height: 40px;
+    margin-top: 4px !important;
   }
 }
 
