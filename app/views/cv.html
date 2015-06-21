@@ -17,18 +17,35 @@
 
 <br>
 
-<div ng-if="results.length > 0" class="row">
+<div ng-if="filteredfunctions.length > 0" class="row">
   <div class="col-md-10 col-md-offset-2 col-sm-9 col-sm-offset-3">
     <h2>{{cvs.functionsLabel}}</h2>
   </div>
 </div>
 
-<div class="row" data-ng-repeat="function in cvs.functions | filter:search.$ as results">
+<div class="row" data-ng-repeat="function in cvs.functions | filter:search.$ as filteredfunctions">
   <div class="col-md-2 col-sm-3">
     <h2 data-ng-bind-html="highlight(function.title, search.$)"></h2>
   </div>
   <div class="col-md-10 col-sm-9">
       <p data-ng-repeat="func in function.function" data-ng-bind-html="highlight(func, search.$)"></p>
+  </div>
+</div>
+
+<br>
+
+<div ng-if="filteredcourses.length > 0" class="row">
+  <div class="col-md-10 col-md-offset-2 col-sm-9 col-sm-offset-3">
+    <h2>{{cvs.coursesLabel}}</h2>
+  </div>
+</div>
+
+<div class="row" data-ng-repeat="course in cvs.courses | filter:search.$ | orderBy: '-period' as filteredcourses">
+  <div class="col-md-2 col-sm-3">
+    <h2 data-ng-bind-html="highlight(course.period, search.$)"></h2>
+  </div>
+  <div class="col-md-10 col-sm-9">
+    <p data-ng-bind-html="highlight(course.title, search.$)"></p>
   </div>
 </div>
 

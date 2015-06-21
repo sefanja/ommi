@@ -42,6 +42,18 @@
         "People Individual Marie Curie Actions (FP7-PEOPLE-2013) IEF, IIF, and IOF on Mathematics & Engineering (MATENG) panel, European Commission."
       ]
     }
+  ],
+
+  "coursesLabel": "Teaching",
+  "courses": [
+    {
+      "title": "Internet of Things",
+      "period": "2013-2015"
+    },
+    {
+      "title": "Human Machine Interaction",
+      "period": "2015-2016"
+    }
   ]
 }
 
