@@ -6,8 +6,7 @@
   "items" : [
     {
       "title": "Current",
-      "summaryText": "Dr. Egon L. van den Broek is assistant professor interaction technology at the University of Utrecht. He also works as a consultant for various institutes and organizations like the European Commission, TNO, Philips and the United Nations. He is co-founder and Chief Scientific Officer (CSO) of Information eXperience BV.",
-      "youtube": "-WshSHlBOdU"
+      "summaryText": "Dr. Egon L. van den Broek is assistant professor interaction technology at the University of Utrecht. He also works as a consultant for various institutes and organizations like the European Commission, TNO, Philips and the United Nations. He is co-founder and Chief Scientific Officer (CSO) of Information eXperience BV."
     },
     {
       "title": "Study",
@@ -15,7 +14,8 @@
     },
     {
       "title": "Research",
-      "summaryText": "His current research focuses on various aspects of the Internet of Things, the next IT revolution. He works on conscious or unconscious, invisible intuitive interaction with ICT. For this, ICT is needed that can adapt to a context, and intelligent, empathetic and (semi-) autonomous."
+      "summaryText": "His current research focuses on various aspects of the Internet of Things, the next IT revolution. He works on conscious or unconscious, invisible intuitive interaction with ICT. For this, ICT is needed that can adapt to a context, and intelligent, empathetic and (semi-) autonomous.",
+      "youtube": "-WshSHlBOdU"
     }
 
     ]
