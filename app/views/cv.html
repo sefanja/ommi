@@ -1,33 +1,35 @@
-<div class="row" data-ng-repeat="cv in cvs.items ">
-  <div class="col-md-2 col-sm-3 datetime">
-    <h2>{{cv.year}}</h2>
-  </div>
-  <div class="col-md-10 col-sm-9">
-    <p  data-ng-bind-html="renderHtml(cv.abstract)"></p>
+<div class="row">
+  <div class="col-sm-11 col-sm-offset-0">
+    <input data-ng-model="search.$" placeholder="{{cvs.searchLabel}}" class="search">
   </div>
 </div>
 
-<div class="row">&nbsp;</div>
+<br><br class="hidden-xs">
 
-<div class="row" >
+<div class="row" data-ng-repeat="cv in cvs.items | filter:search.$">
   <div class="col-md-2 col-sm-3 datetime">
-    &nbsp;
+    <h2 data-ng-bind-html="highlight(cv.year, search.$)"></h2>
   </div>
   <div class="col-md-10 col-sm-9">
+    <p data-ng-bind-html="highlight(cv.abstract, search.$)"></p>
+  </div>
+</div>
+
+<br>
+
+<div ng-if="results.length > 0" class="row">
+  <div class="col-md-10 col-md-offset-2 col-sm-9 col-sm-offset-3">
     <h2>{{cvs.functionsLabel}}</h2>
   </div>
 </div>
 
-
-<div class="row" data-ng-repeat="function in cvs.functions ">
-
-  <div class="col-md-2 col-sm-3 datetime">
-    <h2>{{function.title}}</h2>
+<div class="row" data-ng-repeat="function in cvs.functions | filter:search.$ as results">
+  <div class="col-md-2 col-sm-3">
+    <h2 data-ng-bind-html="highlight(function.title, search.$)"></h2>
   </div>
   <div class="col-md-10 col-sm-9">
-    <span  data-ng-repeat="func in function.function">
-      <p  data-ng-bind-html="renderHtml(func)"></p>
-    </span>
+      <p data-ng-repeat="func in function.function" data-ng-bind-html="highlight(func, search.$)"></p>
   </div>
 </div>
+
 <div class="lastmodified">{{cvs.lastmodified.label}} {{cvs.lastmodified.date | date:'dd MMM yyyy'}}</div>

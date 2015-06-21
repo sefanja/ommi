@@ -4,6 +4,8 @@
     "label" : "Last modified"
   },
 
+  "searchLabel": "Search CV",
+
   "items": [
     {
       "year": "2013",

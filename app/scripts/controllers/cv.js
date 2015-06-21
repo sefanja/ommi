@@ -19,4 +19,12 @@ angular.module('ommiApp')
       return $sce.trustAsHtml(htmlCode);
     };
 
+    $scope.highlight = function(text, search) {
+      if (!search) {
+        return $sce.trustAsHtml(text);
+      }
+      if (text) {
+        return $sce.trustAsHtml(text.replace(new RegExp(search, 'gi'), '<span class="highlightedText">$&</span>'));
+      }
+    };
   });

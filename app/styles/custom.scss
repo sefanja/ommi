@@ -2,7 +2,8 @@ $screen-sm-min: 768px;
 $screen-md-min: 992px;
 $screen-lg-min: 1200px;
 
-  /* Fonts */
+
+/* Fonts */
 html, body {
   font-family: "Open Sans", sans-serif !important;
   background-color: #efefef;
@@ -51,7 +52,8 @@ html, body {
   }
 }
 
-/* Title */
+
+/* Page title */
 .title .staff a {
   margin: 0;
   padding: 25px 0 28px;
@@ -76,6 +78,7 @@ p + h2 {
   margin-top: 1.2em;
 }
 
+
 /* Page header */
 .page-header {
   position: relative;
@@ -99,7 +102,8 @@ p + h2 {
   max-width: 100%;
 }
 
-/* Profile tabs */
+
+/* Profile menu tabs */
 .profile-tabs {
   border-top-style: none;
   border-left-style: none;
@@ -115,6 +119,7 @@ p + h2 {
     margin-left: 15px;
   }
 }
+
 
 /* Profile content */
 .profile-content {
@@ -175,6 +180,8 @@ p + h2 {
   width: 250px;
   padding-left: 10px;
   font-size: 14px;
+  vertical-align: top;
+  line-height: normal;
 }
 
 
@@ -185,7 +192,6 @@ select {
   height: 30px;
   width: 250px;
   padding-left: 10px;
-  margin: 1px;
   font-size: 14px;
   margin-left: 10px;
   vertical-align: top;
@@ -247,6 +253,8 @@ footer {
   }
 }
 
+
+/* Added by Jacobus */
 .sortorder:after {
   content: '\25b2';
   font-size: 12px;
@@ -268,53 +276,3 @@ footer {
 .nomargin {
   margin: 0;
 }
-/*
-.page-header .link {
-  color: rgb(59, 59, 59);
-  display: block;
-  height: 42px;
-  line-height: 24px;
-  max-width: 100%;
-}
-
-.page-header .link {
-  background-color: black;
-  display: inline-block;
-  height: 42px;
-  line-height: 42px;
-  padding-left: 19px;
-  transition-delay: 0s;
-  transition-duration: 0.1s;
-  transition-property: color;
-  transition-timing-function: ease-in-out;
-  font-size: 15px;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-  a {
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-}
-
-.page-header .link::after {
-  display: inline-block;
-  content: "\e610";
-  height: 42px;
-  line-height: 42px;
-  padding: 0 19px;
-  font-family: icomoon;
-  font-weight: bold;
-  font-size: 15px;
-  color: white;
-  margin-left: 19px;
-}
-
-.page-header .link:hover::after {
-  background: white;
-  color: black;
-}
-*/
