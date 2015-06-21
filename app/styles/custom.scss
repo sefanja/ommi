@@ -20,26 +20,28 @@ html, body {
   position: relative;
 }
 
-/* Logo */
-#ImageLogo {
-  height: 48px;
-  margin-top: 8px;
-  @media (max-width: $screen-sm-min) {
-    height: 40px;
-    margin-top: 4px !important;
-  }
-}
-
+/* Brandbar */
 .brandbar {
   @media (max-width: $screen-sm-min) {
     height: 48px;
   }
-}
-
-.glyphicon-menu-hamburger {
-  font-size: 22px;
-  padding: 12px 18px;
-  background-color: #efefef;
+  .glyphicon-menu-hamburger {
+    font-size: 22px;
+    padding: 12px 18px;
+    background-color: #efefef;
+    width: 60px;
+    text-align: center;
+    float: left;
+    margin-right: 25px;
+  }
+  #ImageLogo {
+    height: 48px;
+    margin-top: 8px;
+    @media (max-width: $screen-sm-min) {
+      height: 40px;
+      margin-top: 3px;
+    }
+  }
 }
 
 /* Breadcrumb */
@@ -74,7 +76,7 @@ html, body {
   line-height: 107px;
   @media (max-width: $screen-sm-min) {
     font-size: 28px;
-    line-height: 55px;
+    line-height: 2em;
   }
 }
 
