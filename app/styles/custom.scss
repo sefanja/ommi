@@ -5,11 +5,21 @@ $screen-lg-min: 1200px;
   /* Fonts */
 html, body {
   font-family: "Open Sans", sans-serif !important;
+  background-color: #efefef;
 }
+
 
 /* Obscure mail address from spambots */
 .domain::before {
   content: "\0040"; /* Unicode character for @ symbol */
+}
+
+
+/* Page */
+.page {
+  max-width: 1600px;
+  background-color: #ffffff;
+  position: relative;
 }
 
 
