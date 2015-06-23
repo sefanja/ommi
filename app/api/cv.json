@@ -54,6 +54,23 @@
       "title": "Human Machine Interaction",
       "period": "2015-2016"
     }
+  ],
+
+  "groupsLabel": "Research groups",
+  "groups": [
+    {
+      "name": "EWI-HMI: Human Media Interaction",
+      "url": "http://hmi.ewi.utwente.nl/",
+      "period": "2012-2015"
+    }
+  ],
+
+  "projectsLabel": "Research projects",
+  "projects": [
+    {
+      "name": "BrainGain/2: BCI applications for healthy users",
+      "url": "http://eprints.eemcs.utwente.nl/view/project/BrainGain=2F2.html",
+      "period": "2010-2018"
+    }
   ]
 }
-

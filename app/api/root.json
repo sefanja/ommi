@@ -1,10 +1,24 @@
 {
-  "firstname":"Egon L.",
+  "firstname": "Egon L.",
   "lastname": "van den Broek",
-  "phonenr" : "+31 30 253 5966",
-  "email" : "e.l.vandenbroek@uu.nl",
-  "twitter" : "#egon",
-  "youtube" : "yes",
-  "linkedin" : "yes"
+  "phonenr": "+31 30 253 5966",
+  "email": "e.l.vandenbroek@uu.nl",
+  "twitter": "#egon",
+  "youtube": "yes",
+  "linkedin": "yes",
+  "jobtitle": "Assistant Professor",
+  "department": [
+    {
+      "name": "Computer Science",
+      "url": "http://www.uu.nl/en/organisation/department-of-information-and-computing-sciences"
+    },
+    {
+      "name": "Interaction Technology",
+      "url": "http://www.uu.nl/en/research/game-research/about-us/participating-research-groups/interaction-technology"
+    },
+    {
+      "name": "Multimedia",
+      "url": "http://www.uu.nl/en/research/game-research/about-us/participating-research-groups/interaction-technology"
+    }
+  ]
 }
-
