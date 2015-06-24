@@ -71,6 +71,16 @@
       "name": "BrainGain/2: BCI applications for healthy users",
       "url": "http://eprints.eemcs.utwente.nl/view/project/BrainGain=2F2.html",
       "period": "2010-2018"
+    },
+    {
+      "name": "COMMIT/P04+P05: Virtual Worlds for Well-being",
+      "url": "http://eprints.eemcs.utwente.nl/view/project/COMMIT=2FP04=2BP05.html",
+      "period": "2012-2014"
+    },
+    {
+      "name": "Puppy-IR: An Open Source Environment to construct Information Services for Children",
+      "url": "http://hmi.ewi.utwente.nl/puppyir/",
+      "period": "2008-2013"
     }
   ]
 }

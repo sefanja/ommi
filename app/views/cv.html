@@ -23,7 +23,7 @@
   </div>
 </div>
 
-<div class="row" data-ng-repeat="group in cvs.groups">
+<div class="row" data-ng-repeat="group in cvs.groups | orderBy: '-period'">
   <div class="col-md-2 col-sm-3 datetime">
     <h2>{{group.period}}</h2>
   </div>
@@ -40,7 +40,7 @@
   </div>
 </div>
 
-<div class="row" data-ng-repeat="project in cvs.projects">
+<div class="row" data-ng-repeat="project in cvs.projects | orderBy: '-period'">
   <div class="col-md-2 col-sm-3 datetime">
     <h2>{{project.period}}</h2>
   </div>
