@@ -114,6 +114,12 @@ p + h2 {
   h2 {
     text-transform: none;
   }
+  a {
+    text-decoration: underline;
+  }
+  a:hover {
+    color: #000000;
+  }
 }
 
 .profile-picture {
