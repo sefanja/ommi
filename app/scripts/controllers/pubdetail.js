@@ -11,6 +11,8 @@
  */
 angular.module('ommiApp')
   .controller('PubDetailCtrl', function ($scope, $anchorScroll, publications, selectedID) {
+    $scope.publications = publications;
+
     function setPub(id) {
       $scope.pub = _.find(publications.items, function (pub) {
         return pub.id === id;

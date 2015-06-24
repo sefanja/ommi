@@ -80,7 +80,7 @@
         <h2 class="attr">Research group</h2>
       </div>
       <div class="col-md-10">
-        <p>{{pub.researchgroup}}</p>
+        <p><a ng-href="{{(publications.researchgroups | filter: {name: pub.researchgroup})[0].url}}">{{pub.researchgroup}}</a></p>
       </div>
     </div>
     <div class="row">
@@ -88,15 +88,19 @@
         <h2 class="attr">Research program</h2>
       </div>
       <div class="col-md-10">
-        <p>{{pub.researchprogram}}</p>
+        <p><a ng-href="{{(publications.researchprograms | filter: {name: pub.researchprogram})[0].url}}">{{pub.researchprogram}}</a></p>
       </div>
     </div>
-    <div class="row" data-ng-if="pub.researchproject">
+    <div class="row" data-ng-if="pub.researchprojects">
       <div class="col-md-2">
-        <h2 class="attr">Research project</h2>
+        <h2 class="attr">Research projects</h2>
       </div>
       <div class="col-md-10">
-        <p>{{pub.researchproject}}</p>
+        <p>
+        <span ng-repeat="(key, value) in pub.researchprojects">
+          <a ng-href="{{(publications.researchprojects | filter: {name: value})[0].url}}">{{value}}</a><span ng-if="!$last">, </span>
+        </span>
+        </p>
       </div>
     </div>
     <div class="row" data-ng-if="pub.additionalinfo">
@@ -146,6 +150,7 @@
       <div class="col-md-12">
         <button class="btn btn-default" ng-click="isCollapsed = !isCollapsed">Related publications</button>
         <br><br>
+
         <div collapse="isCollapsed">
           <div class="well well-lg">
             <p ng-repeat="pub in related"><a href="" data-ng-click="showPublication(pub.id)">{{pub.reference}}</a></p>

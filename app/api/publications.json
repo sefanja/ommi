@@ -16,7 +16,7 @@
       "type": "Journal paper",
       "researchgroup": "EWI-HMI: Human Media Interaction",
       "researchprogram": "CTIT-NICE: Natural Interaction in Computer-mediated Environments",
-      "researchproject": "COMMIT/P04+P05: Virtual Worlds for Well-being",
+      "researchprojects": ["COMMIT/P04+P05: Virtual Worlds for Well-being"],
       "additionalinfo": "This version is a slightly improved version, compared to the originally version published by IEEE.",
       "keywords": ["Fast Exact Euclidean Distance (FEED)", "distance transform", "distance transformation", "Voronoi", "computational complexity", "adaptive", "benchmark"],
       "status": "Published",
@@ -38,7 +38,7 @@
       "type": "Journal paper",
       "researchgroup": "EWI-HMI: Human Media Interaction",
       "researchprogram": "CTIT-NICE: Natural Interaction in Computer-mediated Environments",
-      "researchproject": "Puppy-IR: An Open Source Environment to construct Information Services for Children",
+      "researchprojects": ["Puppy-IR: An Open Source Environment to construct Information Services for Children"],
       "keywords": ["linguistic analysis", "user satisfaction", "information use", "complexity", "interest", "information retrieval", "text mining", "communication", "psychology", "bandwidth"],
       "status": "Published",
       "deposited": "2014-07-29",
@@ -98,7 +98,7 @@
       "type": "Book chapter",
       "researchgroup": "EWI-HMI: Human Media Interaction",
       "researchprogram": "CTIT-NICE: Natural Interaction in Computer-mediated Environments",
-      "researchproject": "BrainGain/2: BCI applications for healthy users, COMMIT/P04+P05: Virtual Worlds for Well-being",
+      "researchprojects": ["BrainGain/2: BCI applications for healthy users", "COMMIT/P04+P05: Virtual Worlds for Well-being"],
       "additionalinfo": "Invited contribution for the COST 2102 International Training School, Dresden, Germany, February 21-26, 2011, Revised Selected Papers",
       "keywords": ["affect", "emotion", "affective computing", "biosignals", "history", "complexity", "definitions", "semantic gap"],
       "status": "Published",
@@ -120,7 +120,7 @@
       "type": "Journal paper",
       "researchgroup": "EWI-HMI: Human Media Interaction",
       "researchprogram": "CTIT-NICE: Natural Interaction in Computer-mediated Environments",
-      "researchproject": "BrainGain/2: BCI applications for healthy users",
+      "researchprojects": ["BrainGain/2: BCI applications for healthy users"],
       "keywords": ["Mood", "music", "psychophysiology", "user modeling", "kernel density estimation", "validation", "affective computing"],
       "status": "Published",
       "deposited": "2012-04-18",
@@ -144,7 +144,7 @@
       "assistantsupervisors": "Westerink, J.H.D.M",
       "researchgroup": "EWI-HMI: Human Media Interaction",
       "researchprogram": "CTIT-NICE: Natural Interaction in Computer-mediated Environments",
-      "researchproject": "BrainGain/2: BCI applications for healthy users",
+      "researchprojects": ["BrainGain/2: BCI applications for healthy users"],
       "additionalinfo": "A review of this PhD thesis can be found at: Esposito, A. (2012). Affective Signal Processing (ASP): Unraveling the mystery of emotions, by Egon L. van den Broek. Journal of Ambient Intelligence and Smart Environments, 4(1), 75-76. DOI/URL: http://dx.doi.org/10.3233/AIS-2011-0131",
       "keywords": ["Affective Signal Processing", "ASP", "affective computing", "affect", "emotion", "biosignals", "psychophysiology", "speech", "machine learning", "pattern recognition", "statistics", "experimentation", "modeling", "validity", "validation", "guidelines", "prerequisites", "review", "overview"],
       "deposited": "2011-11-22",
@@ -153,6 +153,33 @@
         "doi": "http://dx.doi.org/10.3990/1.9789036532433",
         "pdf": "http://eprints.eemcs.utwente.nl/20812/01/VandenBroek11-Affective_Signal_Processing_ASP2.pdf"
       }
+    }
+  ],
+
+  "researchgroups": [
+    {
+      "name": "EWI-HMI: Human Media Interaction",
+      "url": "http://hmi.ewi.utwente.nl/"
+    }
+  ],
+  "researchprojects" :[
+    {
+      "name": "BrainGain/2: BCI applications for healthy users",
+      "url": "http://eprints.eemcs.utwente.nl/view/project/BrainGain=2F2.html"
+    },
+    {
+      "name": "COMMIT/P04+P05: Virtual Worlds for Well-being",
+      "url": "http://eprints.eemcs.utwente.nl/view/project/COMMIT=2FP04=2BP05.html"
+    },
+    {
+      "name": "Puppy-IR: An Open Source Environment to construct Information Services for Children",
+      "url": "http://hmi.ewi.utwente.nl/puppyir/"
+    }
+  ],
+  "researchprograms": [
+    {
+      "name": "CTIT-NICE: Natural Interaction in Computer-mediated Environments",
+      "url": "http://eprints.eemcs.utwente.nl/view/program/CTIT-NICE.html"
     }
   ]
 }
