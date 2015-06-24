@@ -16,9 +16,9 @@
       "type": "Journal paper",
       "researchgroup": "EWI-HMI: Human Media Interaction",
       "researchprogram": "CTIT-NICE: Natural Interaction in Computer-mediated Environments",
-      "researchprojects": ["COMMIT/P04+P05: Virtual Worlds for Well-being"],
+      "researchproject": "COMMIT/P04+P05: Virtual Worlds for Well-being",
       "additionalinfo": "This version is a slightly improved version, compared to the originally version published by IEEE.",
-      "keywords": ["Fast Exact Euclidean Distance (FEED)", "distance transform", "distance transformation", "Voronoi", "computational complexity", "adaptive", "benchmark"],
+      "keywords": "Fast Exact Euclidean Distance (FEED), distance transform, distance transformation, Voronoi, computational complexity, adaptive, benchmark",
       "status": "Published",
       "deposited": "2014-02-20",
       "year": 2014,
@@ -35,11 +35,11 @@
       "title": "When complexity becomes interesting",
       "reference": "van der Sluis, F. and van den Broek, E.L. and Glassey, R.J. and van Dijk, E.M.A.G. and de Jong, F.M.G. (2014) When complexity becomes interesting. Journal of the Association for Information Science and Technology, 65 (7). pp. 1478-1500. ISSN 2330-1643",
       "abstract": "How to provide users a positive experience during interaction with information (i.e., the “Information eXperience” (IX)) is still an open question. As a starting point, this work investigates how the emotion of interest can be influenced by modifying the complexity of the information presented to users. The appraisal theory of interest suggests a “sweet spot” where interest will be at its peak: information that is novel and complex yet still comprehensible. This “sweet spot” is approximated using two studies. Study One develops a computational model of textual complexity founded on psycholinguistic theory on processing difficulty. The model was trained and tested on 12,420 articles, achieving a classification performance of 90.87% on two classes of complexity. Study Two puts the model to its ultimate test: Its application to change the user's IX. Using 18 news articles the influence of complexity on interest and its appraisals is unveiled. A structural equation model shows a positive influence of complexity on interest, yet a negative influence of comprehensibility, confirming a seemingly paradoxical relationship between complexity and interest. By showing when complexity becomes interesting, this paper shows how information systems can use the model of textual complexity to construct an interesting IX.",
-      "type": "Journal paper",
+      "type": "Book",
       "researchgroup": "EWI-HMI: Human Media Interaction",
       "researchprogram": "CTIT-NICE: Natural Interaction in Computer-mediated Environments",
-      "researchprojects": ["Puppy-IR: An Open Source Environment to construct Information Services for Children"],
-      "keywords": ["linguistic analysis", "user satisfaction", "information use", "complexity", "interest", "information retrieval", "text mining", "communication", "psychology", "bandwidth"],
+      "researchproject": "Puppy-IR: An Open Source Environment to construct Information Services for Children",
+      "keywords": "linguistic analysis, user satisfaction, information use, complexity, interest, information retrieval, text mining, communication, psychology, bandwidth",
       "status": "Published",
       "deposited": "2014-07-29",
       "year": 2014,
@@ -58,7 +58,7 @@
       "type": "Contribution to proceedings",
       "researchgroup": "EWI-HMI: Human Media Interaction",
       "researchprogram": "CTIT-NICE: Natural Interaction in Computer-mediated Environments",
-      "keywords": ["Online Social Networks", "forensics", "security", "information management"],
+      "keywords": "Online Social Networks, forensics, security, information management",
       "status": "Published",
       "deposited": "2014-12-08",
       "year": 2014,
@@ -74,10 +74,10 @@
       "title": "Motor, emotional, and cognitive empathy in children and adolescents with autism spectrum disorder and conduct disorder",
       "reference": "Bons, D. and van den Broek, E.L. and Scheepers, F. and Herpers, P. and Rommelse, N. and Buitelaar, J.K. (2013) Motor, emotional, and cognitive empathy in children and adolescents with autism spectrum disorder and conduct disorder. Journal of Abnormal Child Psychology, 41 (3). pp. 425-443. ISSN 0091-0627",
       "abstract": "It is unclear which aspects of empathy are shared and which are uniquely affected in autism spectrum disorder (ASD) and conduct disorder (CD) as are the neurobiological correlates of these empathy impairments. The aim of this systematic review is to describe the overlap and specificity of motor, emotional, and cognitive aspects of empathy in children and adolescents with ASD or CD. Motor and cognitive empathy impairments are found in both ASD and CD, yet the specificity seems to differ. In ASD facial mimicry and emotion recognition may be impaired for all basic emotions, whereas in CD this is only the case for negative emotions. Emotional empathy and the role of attention to the eyes therein need further investigation. We hypothesize that impaired motor and cognitive empathy in both disorders are a consequence of lack of attention to the eyes. However, we hypothesize major differences in emotional empathy deficits between ASD and CD, probably due to emotional autonomic and amygdala hyper-responsivity in ASD versus hypo-responsivity in CD, both resulting in lack of attention to the eyes.",
-      "type": "Journal paper",
+      "type": "Article",
       "researchgroup": "EWI-HMI: Human Media Interaction",
       "researchprogram": "CTIT-NICE: Natural Interaction in Computer-mediated Environments",
-      "keywords": ["Empathy", "Autism spectrum disorders", "Conduct disorder", "Facial expression", "Emotion", "physiology", "psychology", "biosignals", "biofeedback", "diagnostic support"],
+      "keywords": "Empathy, Autism spectrum disorders, Conduct disorder, Facial expression, Emotion, physiology, psychology, biosignals, biofeedback, diagnostic support",
       "status": "Published",
       "deposited": "2013-06-10",
       "year": 2013,
@@ -98,9 +98,9 @@
       "type": "Book chapter",
       "researchgroup": "EWI-HMI: Human Media Interaction",
       "researchprogram": "CTIT-NICE: Natural Interaction in Computer-mediated Environments",
-      "researchprojects": ["BrainGain/2: BCI applications for healthy users", "COMMIT/P04+P05: Virtual Worlds for Well-being"],
+      "researchproject": "BrainGain/2: BCI applications for healthy users, COMMIT/P04+P05: Virtual Worlds for Well-being",
       "additionalinfo": "Invited contribution for the COST 2102 International Training School, Dresden, Germany, February 21-26, 2011, Revised Selected Papers",
-      "keywords": ["affect", "emotion", "affective computing", "biosignals", "history", "complexity", "definitions", "semantic gap"],
+      "keywords": "affect, emotion, affective computing, biosignals, history, complexity, definitions, semantic gap",
       "status": "Published",
       "deposited": "2013-05-02",
       "year": 2013,
@@ -120,8 +120,8 @@
       "type": "Journal paper",
       "researchgroup": "EWI-HMI: Human Media Interaction",
       "researchprogram": "CTIT-NICE: Natural Interaction in Computer-mediated Environments",
-      "researchprojects": ["BrainGain/2: BCI applications for healthy users"],
-      "keywords": ["Mood", "music", "psychophysiology", "user modeling", "kernel density estimation", "validation", "affective computing"],
+      "researchproject": "BrainGain/2: BCI applications for healthy users",
+      "keywords": "Mood, music, psychophysiology, user modeling, kernel density estimation, validation, affective computing",
       "status": "Published",
       "deposited": "2012-04-18",
       "year": 2012,
@@ -139,47 +139,20 @@
       "subtitle": "Unraveling the mystery of emotions",
       "reference": "van den Broek, E.L. (2011) Affective Signal Processing (ASP): Unraveling the mystery of emotions. PhD thesis, University of Twente. CTIT Ph.D.-thesis series No. 11-204 ISBN 978-90-365-3243-3",
       "abstract": "Slowly computers are being dressed and becoming huggable and tangible. They are being personalized and are expected to understand more of their users' feelings, emotions, and moods: This we refer to as affective computing. The work and experiences from 50+ publications on affective computing is collected and reported in one concise monograph. A brief introduction on emotion theory and affective computing is given and its relevance for computer science (i.e., Human-Computer Interaction, Artificial Intelligence (AI), and Health Informatics) is denoted. Next, a closed model for affective computing is introduced and reviews of both biosignals and affective computing are presented. The conclusion of all of this is that affective computing lacks standards. Affective computing's key dimensions need to be identified and studied to bring the field the progress it needs. A series of studies is presented that explore baseline-free affective computing, the influence of a range of distinct triggers for emotions, the influence of time windows, several combinations of biosignals with and without speech, the impact of the context, the personality traits neuroticism and extroversion, and demographics. Moreover, a complete signal processing + classification processing pipeline for affective computing is developed and executed on the data gathered. This pipeline is also applied on two clinical case studies, which proves that affective computing is already feasible in clinical practice; that is, Computer Aided Diagnosis (CAD) for patients suffering from a Post-Traumatic Stress Disorder (PTSD). A set of key dimensions for affective computing and, subsequently, prerequisites and guidelines are defined, based on the author's work and experiences. Moreover, historical, emotion theoretical, and computer science perspectives are taken to reflect upon the work and five applications (i.e., next-generation TV, knowledge representations, CAD, robot nannies, and digital human models) are presented to illustrate the field's future impact. If anything, this monograph shows that affective computing will become unstoppable, will determine our relation with ICT and, as such, will reshape our lives.",
-      "type": "Dissertation",
+      "type": "Thesis",
       "supervisors": "Nijholt, A. and Dijkstra, T.",
       "assistantsupervisors": "Westerink, J.H.D.M",
       "researchgroup": "EWI-HMI: Human Media Interaction",
       "researchprogram": "CTIT-NICE: Natural Interaction in Computer-mediated Environments",
-      "researchprojects": ["BrainGain/2: BCI applications for healthy users"],
+      "researchproject": "BrainGain/2: BCI applications for healthy users",
       "additionalinfo": "A review of this PhD thesis can be found at: Esposito, A. (2012). Affective Signal Processing (ASP): Unraveling the mystery of emotions, by Egon L. van den Broek. Journal of Ambient Intelligence and Smart Environments, 4(1), 75-76. DOI/URL: http://dx.doi.org/10.3233/AIS-2011-0131",
-      "keywords": ["Affective Signal Processing", "ASP", "affective computing", "affect", "emotion", "biosignals", "psychophysiology", "speech", "machine learning", "pattern recognition", "statistics", "experimentation", "modeling", "validity", "validation", "guidelines", "prerequisites", "review", "overview"],
+      "keywords": "Affective Signal Processing, ASP, affective computing, affect, emotion, biosignals, psychophysiology, speech, machine learning, pattern recognition, statistics, experimentation, modeling, validity, validation, guidelines, prerequisites, review, overview",
       "deposited": "2011-11-22",
       "year": 2011,
       "urls": {
         "doi": "http://dx.doi.org/10.3990/1.9789036532433",
         "pdf": "http://eprints.eemcs.utwente.nl/20812/01/VandenBroek11-Affective_Signal_Processing_ASP2.pdf"
       }
-    }
-  ],
-
-  "researchgroups": [
-    {
-      "name": "EWI-HMI: Human Media Interaction",
-      "url": "http://hmi.ewi.utwente.nl/"
-    }
-  ],
-  "researchprojects" :[
-    {
-      "name": "BrainGain/2: BCI applications for healthy users",
-      "url": "http://eprints.eemcs.utwente.nl/view/project/BrainGain=2F2.html"
-    },
-    {
-      "name": "COMMIT/P04+P05: Virtual Worlds for Well-being",
-      "url": "http://eprints.eemcs.utwente.nl/view/project/COMMIT=2FP04=2BP05.html"
-    },
-    {
-      "name": "Puppy-IR: An Open Source Environment to construct Information Services for Children",
-      "url": "http://hmi.ewi.utwente.nl/puppyir/"
-    }
-  ],
-  "researchprograms": [
-    {
-      "name": "CTIT-NICE: Natural Interaction in Computer-mediated Environments",
-      "url": "http://eprints.eemcs.utwente.nl/view/program/CTIT-NICE.html"
     }
   ]
 }

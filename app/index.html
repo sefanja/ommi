@@ -109,12 +109,12 @@
           <p>{{root.email.substring(0,root.email.indexOf("@"))}}<span class="domain">{{root.email.substring(root.email.indexOf("@")+1)}}</span><br/>
             {{root.phonenr}}</p>
 
-          <p><a href="http://linkedin.com"  target="_blank"><img alt="LinkedIn" src="images/linkedin.png" data-ng-show="root.linkedin"/></a><a
-            href="http://youtube.com"  target="_blank"><img alt="YouTube" src="images/youtube.png" data-ng-show="root.youtube"/></a><a
-            href="http://twitter.com" title="Twitter" target="_blank"><img alt="twitter" src="images/twitter.png" data-ng-show="root.twitter"/></a></p>
+          <p><a data-ng-href="{{root.linkedin}}"  target="_blank" title="linkedin"><img alt="LinkedIn" src="images/linkedin.png" data-ng-show="root.linkedin"/></a><a
+            data-ng-href="{{root.youtube}}"  target="_blank" title="youtube"><img alt="YouTube" src="images/youtube.png" data-ng-show="root.youtube" class="twitterImage"/></a><a
+            data-ng-href="{{root.twitter}}" title="Twitter" target="_blank"><img alt="twitter" src="images/twitter.png" data-ng-show="root.twitter"/></a></p>
 
           <h2>{{root.jobtitle}}</h2>
-          <p><span ng-repeat="dept in root.department"><a ng-href="{{dept.url}}">{{dept.name}}</a><span ng-if="!$last"> / </span></span></p>
+          <p><span data-ng-repeat="dept in root.department"><a data-ng-href="{{dept.url}}">{{dept.name}}</a><span data-ng-if="!$last"> / </span></span></p>
         </div>
       </div>
     </div>
