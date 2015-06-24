@@ -21,13 +21,16 @@ angular.module('ommiApp')
       type: ''
     };
 
-    $scope.openPubDetailModal = function (publication) {
+    $scope.openPubDetailModal = function (id) {
       $modal.open({
         templateUrl: 'views/pubdetail.html',
         controller: 'PubDetailCtrl',
         resolve: {
-          publication: function () {
-            return publication;
+          publications: function() {
+            return $scope.publications;
+          },
+          selectedID: function () {
+            return id;
           }
         },
         animation: false // Without this, the backdrop won't go away (bug).

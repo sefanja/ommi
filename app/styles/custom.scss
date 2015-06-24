@@ -229,6 +229,9 @@ body .modal-dialog {
     width: 90%;
     max-width: $screen-lg-min;
   }
+  a {
+    text-decoration: underline;
+  }
 }
 
 .modal-body {

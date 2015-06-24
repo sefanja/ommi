@@ -17,7 +17,7 @@
       <h2 data-ng-if="pub.year != results[$index-1].year">{{pub.year}}</h2>
     </div>
     <div class="col-md-8 col-sm-9">
-      <p><a href="" data-ng-click="openPubDetailModal(pub)"><span
+      <p><a href="" data-ng-click="openPubDetailModal(pub.id)"><span
         data-ng-bind-html="highlight(pub.title, search.$)"></span><span
         data-ng-if="pub.subtitle">:</span>
         <span data-ng-bind-html="highlight(pub.subtitle, search.$)"></span></a></p>
@@ -29,7 +29,7 @@
 
       <p data-ng-if="search.$" data-ng-bind-html="highlight(pub.abstract, search.$)"></p>
 
-      <p data-ng-if="search.$">Keywords: <span data-ng-bind-html="highlight(pub.keywords, search.$)"></span></p>
+      <p data-ng-if="search.$">Keywords: <span ng-repeat="(key, value) in pub.keywords"><span data-ng-bind-html="highlight(value, search.$)"></span><span ng-if="!$last">, </span></span></p>
 
       <p class="reference" data-ng-bind-html="highlight(pub.reference, search.$)"></p>
     </div>
