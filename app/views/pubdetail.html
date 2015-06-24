@@ -5,8 +5,7 @@
 <div class="modal-body" style="overflow:auto">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-2"></div>
-      <div class="col-md-10">
+      <div class="col-md-10 col-md-offset-2">
         <div data-ng-if="pub.urls.doi" class="publink">
           <a data-ng-href="{{pub.urls.doi}}" target="_blank"><img src="images/doi.png"><br>DOI</a>
         </div>
@@ -24,9 +23,16 @@
           <a data-ng-href="http://eprints.eemcs.utwente.nl/perl/export/{{pub.id}}/xml/eemcs-eprint-{{pub.id}}.xml"
              target="_blank"><img src="images/xml.png"><br>XML</a>
         </div>
-        <br><br>
       </div>
     </div>
+    <br>
+    <div class="row">
+      <div class="col-md-10 col-md-offset-2">
+        <p>{{pub.reference}}</p>
+      </div>
+    </div>
+    <hr>
+
     <div class="row">
       <div class="col-md-2">
         <h2 class="attr">Title</h2>
@@ -80,7 +86,7 @@
         <h2 class="attr">Research group</h2>
       </div>
       <div class="col-md-10">
-        <p><a ng-href="{{(publications.researchgroups | filter: {name: pub.researchgroup})[0].url}}">{{pub.researchgroup}}</a></p>
+        <p><a data-ng-href="{{(publications.researchgroups | filter: {name: pub.researchgroup})[0].url}}">{{pub.researchgroup}}</a></p>
       </div>
     </div>
     <div class="row">
@@ -88,7 +94,7 @@
         <h2 class="attr">Research program</h2>
       </div>
       <div class="col-md-10">
-        <p><a ng-href="{{(publications.researchprograms | filter: {name: pub.researchprogram})[0].url}}">{{pub.researchprogram}}</a></p>
+        <p><a data-ng-href="{{(publications.researchprograms | filter: {name: pub.researchprogram})[0].url}}">{{pub.researchprogram}}</a></p>
       </div>
     </div>
     <div class="row" data-ng-if="pub.researchprojects">
@@ -97,8 +103,8 @@
       </div>
       <div class="col-md-10">
         <p>
-        <span ng-repeat="(key, value) in pub.researchprojects">
-          <a ng-href="{{(publications.researchprojects | filter: {name: value})[0].url}}">{{value}}</a><span ng-if="!$last">, </span>
+        <span data-ng-repeat="(key, value) in pub.researchprojects">
+          <a data-ng-href="{{(publications.researchprojects | filter: {name: value})[0].url}}">{{value}}</a><span data-ng-if="!$last">, </span>
         </span>
         </p>
       </div>
@@ -116,7 +122,7 @@
         <h2 class="attr">Keywords</h2>
       </div>
       <div class="col-md-10">
-        <p><span ng-repeat="(key, value) in pub.keywords">{{value}}<span ng-if="!$last">, </span></span></p>
+        <p><span data-ng-repeat="(key, value) in pub.keywords">{{value}}<span data-ng-if="!$last">, </span></span></p>
       </div>
     </div>
     <div class="row">
@@ -146,14 +152,17 @@
 
     <br>
 
-    <div ng-show="related.length > 0" class="row">
+    <div data-ng-show="related.length > 0" class="row">
       <div class="col-md-12">
-        <button class="btn btn-default" ng-click="isCollapsed = !isCollapsed">Related publications</button>
+        <button class="btn btn-default" data-ng-click="isCollapsed = !isCollapsed">Related publications</button>
         <br><br>
 
         <div collapse="isCollapsed">
           <div class="well well-lg">
-            <p ng-repeat="pub in related"><a href="" data-ng-click="showPublication(pub.id)">{{pub.reference}}</a></p>
+            <p data-ng-repeat="pub in related">
+              <a href="" data-ng-click="showPublication(pub.id)">{{pub.title}}<span data-ng-if="pub.subtitle">: {{pub.subtitle}}</span></a><br>
+              {{pub.reference}}
+            </p>
           </div>
         </div>
       </div>
