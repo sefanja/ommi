@@ -196,6 +196,11 @@ p + h2 {
   .summaryrow:hover .glyphicon {
     display: inline-block;
   }
+  .cv {
+    a {
+      text-decoration: underline;
+    }
+  }
 }
 
 /* Search box */

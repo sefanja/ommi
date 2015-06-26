@@ -1,15 +1,12 @@
 <div data-ng-repeat="newsitem in newsitems.items">
   <div class="row newsrow">
     <div class="col-lg-2 col-sm-3">
-      <img src="#"
-           data-ng-src="images/news/{{newsitem.img}}" alt="News image">
+      <img src="#" data-ng-src="images/news/{{newsitem.img}}" alt="News image">
     </div>
     <div class="col-lg-10 col-sm-9">
-      <div class="wrapper-content">
-        <div class="date">{{newsitem.date | date:'dd MMM yyyy'}} {{newsitem.time}}</div>
-        <div class="title"><a href="" data-ng-href="{{newsitem.url}}">{{newsitem.title}}</a></div>
-        <div class="description" data-ng-bind-html="renderHtml(newsitem.description)"></div>
-      </div>
+      <div class="date">{{newsitem.date | date:'dd MMM yyyy'}} {{newsitem.time}}</div>
+      <div class="title"><a href="" data-ng-href="{{newsitem.url}}">{{newsitem.title}}</a></div>
+      <div class="description" data-ng-bind-html="renderHtml(newsitem.description)"></div>
     </div>
   </div>
   <hr data-ng-if="!$last">
