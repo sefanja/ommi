@@ -7,8 +7,8 @@
     <div class="col-lg-10 col-sm-9">
       <div class="wrapper-content">
         <div class="date">{{newsitem.date | date:'dd MMM yyyy'}} {{newsitem.time}}</div>
-        <div class="title" data-ng-show="newsitem.title" data-ng-bind-html="renderHtml(newsitem.title)"></div>
-        <div class="description" data-ng-bind-html="renderHtml(newsitem.item)"></div>
+        <div class="title"><a href="" data-ng-href="{{newsitem.url}}">{{newsitem.title}}</a></div>
+        <div class="description" data-ng-bind-html="renderHtml(newsitem.description)"></div>
       </div>
     </div>
   </div>
