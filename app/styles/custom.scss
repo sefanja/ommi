@@ -163,15 +163,22 @@ p + h2 {
     font-size: 16px;
   }
   .newsrow {
-    @media (max-width: $screen-sm-min) {
-      .datetime {
-        color: #787878;
-      }
+    img {
+      margin-top: 8px;
+      margin-bottom: 8px;
     }
-  }
-  .newsrow:not(:first-child) {
-    @media (max-width: $screen-sm-min) {
-      border-top: 1px solid #e7e7e7;
+    .date {
+      color: #787878;
+      text-transform: uppercase;
+    }
+    .title {
+      font-weight: bold;
+    }
+    .title a {
+      text-decoration: none;
+    }
+    .title a:hover {
+      text-decoration: underline;
     }
   }
   .summaryrow {
