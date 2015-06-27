@@ -1,6 +1,6 @@
 # ommi
 
-This project is created in 2015 by students of the [Open Universiteit Nederland](http://ou.nl) as part of the course [Ontwerpen van mens-machine-interactie](http://ou.nl/studieaanbod/T01341) (designing human-computer interaction), abbreviated as ommi.
+This project is created by students of the [Open Universiteit Nederland](http://ou.nl) as part of the course [Ontwerpen van mens-machine-interactie](http://ou.nl/studieaanbod/T01341) (designing human-computer interaction), abbreviated as ommi.
 
 The goal was to design a responsive prototype of a personal page for a scientific researcher, which should be able to function in the context of the web site of the [Utrecht University](http://uu.nl).
 
