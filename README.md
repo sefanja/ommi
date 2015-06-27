@@ -12,17 +12,16 @@ The goal was to design a prototype of the personal page of a scientific research
 
 Before you begin, you need to install:
 
+* [Git](https://git-scm.com/)
 * [Node.js](https://nodejs.org/)
 * [Bower](http://bower.io/)
+* [Grunt](http://gruntjs.com/)
+* [Compass](http://compass-style.org/)
 
-Clone a copy of this repo by running:
+Then start a command line and run:
 
-    git clone https://github.com/sefanja/ommi.git
-
-If you don't have [Git](https://git-scm.com/) installed, you can simply download and extract the [zip file](https://github.com/sefanja/ommi/archive/master.zip).
-
-Change the working directory to where you cloned the files and run:
-
+    git clone git://github.com/sefanja/ommi.git
+    cd ommi
     npm install
     bower install
 
@@ -34,6 +33,7 @@ Run `grunt` for building and `grunt serve` for preview. The result of the build 
 
 * [Bootstrap](http://getbootstrap.com) is a framework for developing responsive, mobile first projects on the web. It contains design templates and interface components.
 * [Angular](https://angularjs.org/) is a framework for building single page web applications. It provides a client-side model-view-controller architecture.
+* [Compass](http://compass-style.org/) is a CSS authoring framework.
 * [Bower](http://bower.io/) is a package management system for client-side programming that works with Git and GitHub repositories.
 * [Grunt](http://gruntjs.com/) is a JavaScript task runner. In this project we use it for previewing, testing and building.
 * [Yeoman](http://yeoman.io/) is a scaffolding tool for web applications. If you run `yo angular` you get a basic app, including config files for all of the above tools.
