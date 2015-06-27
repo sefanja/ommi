@@ -31,9 +31,9 @@ Run `grunt` for building and `grunt serve` for preview. The result of the build 
 
 ## A few remarks
 
-This project merely served the puprpose of testing human-computer interaction, so you may expect to encounter a fair amount of quick-and-dirty code. My advise would be to refactor the code before continuing on this project.
+This project merely served the puprpose of testing human-computer interaction, so you may expect to encounter a fair amount of quick-and-dirty code. My advice would be to refactor the code before continuing on this project.
 
-One of the ideas behind this project is that data should be retrieved from their respective concern systems (especially the publications), while this web application only contains user interface logic. We therefore used static json files to emulate the APIs of back-end concern systems.
+One of the ideas behind this project is that data should be retrieved from their respective concern systems (especially the publications), while this web application implements only user interface logic. We therefore used static json files to emulate the APIs of back-end concern systems.
 
 ## Toolset used
 
