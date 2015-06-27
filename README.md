@@ -29,11 +29,11 @@ Then start a command line and run:
 
 Run `grunt` for building and `grunt serve` for preview. The result of the build will placed in the `dist` folder, ready for deployment.
 
-A note for further development... This project merely served the puprpose of testing human-computer interaction, so you may expect to encounter a fair amount of quick-and-dirty code. My advise would be to refactor the code before continuing on this project.
+## A few remarks
 
-## API
+This project merely served the puprpose of testing human-computer interaction, so you may expect to encounter a fair amount of quick-and-dirty code. My advise would be to refactor the code before continuing on this project.
 
-The idea is that data should be retrieved from their respective concern systems, while this web application only contains user interface logic. We therefore used static json files to emulate the API of a concern system.
+One of the ideas behind this project is that data should be retrieved from their respective concern systems (especially the publications), while this web application only contains user interface logic. We therefore used static json files to emulate the APIs of back-end concern systems.
 
 ## Toolset used
 
